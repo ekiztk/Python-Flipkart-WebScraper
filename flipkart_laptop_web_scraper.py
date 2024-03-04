@@ -8,6 +8,7 @@ import os
 # from selenium.webdriver.common.by import By
 # from selenium.webdriver.support import expected_conditions as EC
 from classes.WebDriverThread import WebDriverThread
+from helper_functions.get_laptop_customer_questions import get_laptop_customer_questions
 from helper_functions.get_laptop_ratings import get_laptop_ratings
 from helper_functions.get_laptop_reviews import get_laptop_reviews, get_reviews_on_a_page
 from helper_functions.write_array_to_json import write_array_to_json
@@ -34,7 +35,6 @@ df = pd.DataFrame({'Product Url': all_laptop_urls})
 df.to_csv('laptop_urls.csv', index=False, encoding='utf-8')
 print("Finished Getting All Laptop Urls")
 
-
 # Getting Each Laptop Detail
 
 # Get the file ready
@@ -46,7 +46,7 @@ if os.path.exists(file_to_save_laptop_details):
 f = open(file_to_save_laptop_details, "x")
 
 #burda urlleri dosyadan alacak
-for url in ["https://www.flipkart.com/lenovo-ideapad-slim-5-oled-intel-core-ultra-125h-16-gb-1-tb-ssd-windows-11-home-14imh9-laptop/p/itmd68c19b8eeeba?pid=COMGXAU9B7GGGZH4&lid=LSTCOMGXAU9B7GGGZH4QBWTKF&marketplace=FLIPKART&store=6bo%2Fb5g&srno=b_1_11&otracker=product_breadCrumbs_Laptops&fm=organic&iid=28056f02-b13b-4a72-9a5a-e870bd123003.COMGXAU9B7GGGZH4.SEARCH&ppt=browse&ppn=browse"]:
+for url in ["https://www.flipkart.com/acer-aspire-7-intel-core-i5-12th-gen-12450h-16-gb-512-gb-ssd-windows-11-home-4-graphics-nvidia-geforce-rtx-2050-a715-76g-gaming-laptop/p/itmc10163b4c26a8?pid=COMGRHJUCYY63HAA&fm=organic&ppt=dynamic&ppn=dynamic&ssid=8fm0nolfeo0000001709334587337"]:
     driver.get(url)
     content = driver.page_source
     soup = BeautifulSoup(content, "html.parser")
@@ -79,46 +79,52 @@ for url in ["https://www.flipkart.com/lenovo-ideapad-slim-5-oled-intel-core-ultr
             properties.append({"name":tr.contents[0].string, "content": tr.contents[1].string})
         
         specifications.append(dict(category = category, properties = properties))
-    
-    # Get ratings
-    ratings = []
-    all_reviews_div = soup.find('div', attrs={'class':'_3UAT2v _16PBlm'})
-    ratings_div = soup.find('div', class_='_2e3Uck')
-    #if review count is greater than three then go to reviews page
-    if all_reviews_div:
-        rating_url = "https://www.flipkart.com" + all_reviews_div.parent.get('href')
-        # ratings_thread = WebDriverThread(target=get_laptop_ratings, args=(rating_url,))
-        # ratings_thread.start()
-        # ratings = ratings_thread.join()
-    #if review count is less than three then get ratings from the current page
-    elif ratings_div:
-        overall_rating = ratings_div.contents[0].contents[0].contents[0].contents[0].contents[0].contents[0].text
-        ratings.append({"Overall": overall_rating})
 
-    # Get reviews
-    reviews = []
-    review_div_arr = soup.find_all('div', class_='col _2wzgFH')
-    #if review count is greater than three then go to reviews page
-    if all_reviews_div:
-        reviews_thread = WebDriverThread(target=get_laptop_reviews, args=(rating_url,))
-        reviews_thread.start()
-        reviews = reviews_thread.join()
-    #if review count is less than three then get ratings from the current page
-    elif review_div_arr:
-        get_reviews_on_a_page(url,driver,reviews,"col _2wzgFH")
-
-    # Get manufacturer
+    # Get construction information
     # WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "div._1JDTUN"))).click()
+    
+    # # Get ratings
+    ratings = []
+    # all_reviews_div = soup.find('div', attrs={'class':'_3UAT2v _16PBlm'})
+    # ratings_div = soup.find('div', class_='_2e3Uck')
+    # #if review count is greater than three then go to reviews page
+    # if all_reviews_div:
+    #     rating_url = "https://www.flipkart.com" + all_reviews_div.parent.get('href')
+    #     ratings_thread = WebDriverThread(target=get_laptop_ratings, args=(rating_url,))
+    #     ratings_thread.start()
+    #     ratings = ratings_thread.join()
+    # #if review count is less than three then get ratings from the current page
+    # elif ratings_div:
+    #     overall_rating = ratings_div.contents[0].contents[0].contents[0].contents[0].contents[0].contents[0].text
+    #     ratings.append({"Overall": overall_rating})
 
+    # # Get reviews
+    reviews = []
+    # review_div_arr = soup.find_all('div', class_='col _2wzgFH')
+    # #if review count is greater than three then go to reviews page
+    # if all_reviews_div:
+    #     reviews_thread = WebDriverThread(target=get_laptop_reviews, args=(rating_url,))
+    #     reviews_thread.start()
+    #     reviews = reviews_thread.join()
+    # #if review count is less than three then get ratings from the current page
+    # elif review_div_arr:
+    #     get_reviews_on_a_page(url,driver,reviews,"col _2wzgFH")
+
+    # Get questions and answers
+    customer_questions = []
+    questions_answers_title_div = soup.find('div', attrs={'class':'_2n4XY2 _1d7nTU col'})
+    # check if Questions and Answers exits
+    if questions_answers_title_div:
+        questions_thread = WebDriverThread(target=get_laptop_customer_questions, args=(url,))
+        questions_thread.start()
+        customer_questions = questions_thread.join()
 
     # Add the laptop to the array (Ending)
     laptop = Laptop(url=url,name=name,highlights=highlights,features=features,
-                    specifications=specifications,ratings=ratings,reviews=reviews)
+                    specifications=specifications,ratings=ratings,
+                    reviews=reviews,customer_questions=customer_questions)
     
     laptop_array.append(laptop.__dict__)
-
-
-
 
 driver.quit()
 

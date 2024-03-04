@@ -1,52 +1,76 @@
 [
     {
-        "url":"https://www.flipkart.com/lenovo-ideapad-slim-5-oled-intel-core-ultra-125h-16-gb-1-tb-ssd-windows-11-home-14imh9-laptop/p/itmd68c19b8eeeba?pid=COMGXAU9B7GGGZH4&lid=LSTCOMGXAU9B7GGGZH4QBWTKF&marketplace=FLIPKART&store=6bo%2Fb5g&srno=b_1_11&otracker=product_breadCrumbs_Laptops&fm=organic&iid=28056f02-b13b-4a72-9a5a-e870bd123003.COMGXAU9B7GGGZH4.SEARCH&ppt=browse&ppn=browse",
-        "name":"Lenovo IdeaPad Slim 5 OLED Intel Core Ultra 5 125H - (16 GB/1 TB SSD/Windows 11 Home) 14IMH9 Laptop  (14 Inch, Cloud Grey, 1.46 Kg, With MS Office)",
+        "url":"https://www.flipkart.com/acer-aspire-7-intel-core-i5-12th-gen-12450h-16-gb-512-gb-ssd-windows-11-home-4-graphics-nvidia-geforce-rtx-2050-a715-76g-gaming-laptop/p/itmc10163b4c26a8?pid=COMGRHJUCYY63HAA&fm=organic&ppt=dynamic&ppn=dynamic&ssid=8fm0nolfeo0000001709334587337",
+        "name":"Acer Aspire 7 Intel Core i5 12th Gen 12450H - (16 GB/512 GB SSD/Windows 11 Home/4 GB Graphics/NVIDIA GeForce RTX 2050) A715-76G Gaming Laptop  (15.6 Inch, Charcoal Black, 2.1 Kg)",
         "highlights":[
-            "Preloaded with MS Office",
-            "Light Laptop without Optical Disk Drive",
-            "14 Inch WUXGA, OLED 400nits Glossy, 100% DCI-P3, 60Hz, DisplayHDR True Black 500"
+            "15.6 Inch Full HD, display with IPS (In-Plane Switching) technology, Acer ComfyView LED-backlit TFT LCD",
+            "Light Laptop without Optical Disk Drive"
         ],
-        "features":[],
+        "features":[
+            {
+                "title":"Absolute Performance",
+                "description":"At the core of the Acer Aspire 7 lies the latest 12th-gen Intel Core processors and the formidable NVIDIA GeForce RTX 2050. Together, they form a dynamic duo that can power through anything you throw their way. Demanding applications are no match for this gaming marvel. Need more? The memory is upgradable to a staggering 32 GB of DDR4, and you get a swift 512 GB of SSD for rapid data access. With this laptop, there's no task too demanding, no challenge too great."
+            },
+            {
+                "title":"Thermal Solutions",
+                "description":"Performance doesn't mean much if your laptop can't handle the heat. That's where Acer's thermal wizardry comes into play. The Acer Aspire 7 features an air-inlet keyboard, a clever innovation that expels up to 10% more heat than a non-air inlet keyboard. It's all about keeping your laptop cool under pressure. Plus, you have the flexibility to tune your fan settings, optimising the thermal performance for maximum productivity. When you're in the zone, this laptop keeps it cool."
+            },
+            {
+                "title":"Understated Design",
+                "description":"Elegance and power coexist seamlessly in the Acer Aspire 7. The sleek, sharp 19.90 mm aluminum chassis, dressed in Charcoal Black, exudes sophistication. But there's more to this design than meets the eye. The elevating hinge not only adds a touch of uniqueness but also enhances ergonomics and cooling by elevating the laptop for improved airflow. It's a design that's as functional as it is beautiful. And when it's time to work or play in low-light conditions, the backlit keyboard comes to your rescue, ensuring you can do more from wherever, whenever."
+            },
+            {
+                "title":"Visual Brilliance",
+                "description":"Your gaming and creative endeavours deserve a canvas that does justice to your imagination. The Acer Aspire 7 delivers with its FHD IPS display, boasting an impressive 81.67% screen-to-body ratio. Acer BlueLightShield technology ensures viewing comfort, reducing eye strain during marathon gaming sessions or long editing stints. With Acer ExaColor technology, you have precise control over colours, ensuring that your visuals are as vibrant and accurate as your vision."
+            },
+            {
+                "title":"The Connectivity",
+                "description":"In the world of high-speed file sharing, the Acer Aspire 7 is your ultimate companion. With seamless connectivity options, you can effortlessly transfer files at lightning speed. And when it's time to immerse yourself in entertainment, the Thunderbolt 4 port opens the door to a world of possibilities. Connect an 8K display for an immersive experience that's beyond compare. It's all about staying connected and entertained with minimal effort."
+            },
+            {
+                "title":"Intelligent Communication",
+                "description":"Communication is more critical than ever, whether you're attending online courses or staying in touch with loved ones. Acer understands this, and that's why they've equipped the Aspire 7 with Acer PurifiedVoice featuring AI noise reduction. This intelligent technology actively suppresses background noise, ensuring crystal-clear audio for both you and the person on the other end of the line. And it doesn't stop there – it's compatible with external headphones and microphones, giving you the flexibility you need for any situation. With the Acer Aspire 7, your voice is heard, loud and clear."
+            }
+        ],
         "specifications":[
             {
                 "category":"General",
                 "properties":[
                     {
                         "name":"Sales Package",
-                        "content":"Laptop, Adapter, User Guide"
+                        "content":"Laptop, Power Adaptor, User Guide, Warranty Documents"
                     },
                     {
                         "name":"Model Number",
-                        "content":"14IMH9"
+                        "content":"A715-76G"
                     },
                     {
                         "name":"Part Number",
-                        "content":"83DA0049IN"
+                        "content":"UN.QMYSI.002"
                     },
                     {
                         "name":"Model Name",
-                        "content":"14IMH9"
+                        "content":"A715-76G"
                     },
                     {
                         "name":"Series",
-                        "content":"IdeaPad Slim 5 OLED"
+                        "content":"Aspire 7"
                     },
                     {
                         "name":"Color",
-                        "content":"Cloud Grey"
+                        "content":"Charcoal Black"
                     },
                     {
                         "name":"Type",
-                        "content":"Laptop"
+                        "content":"Gaming Laptop"
                     },
                     {
                         "name":"Suitable For",
-                        "content":"Processing & Multitasking"
+                        "content":"Gaming"
                     },
                     {
                         "name":"MS Office Provided",
-                        "content":"Yes"
+                        "content":"No"
                     }
                 ]
             },
@@ -54,12 +78,24 @@
                 "category":"Processor And Memory Features",
                 "properties":[
                     {
+                        "name":"Dedicated Graphic Memory Type",
+                        "content":"GDDR6"
+                    },
+                    {
+                        "name":"Dedicated Graphic Memory Capacity",
+                        "content":"4 GB"
+                    },
+                    {
                         "name":"Processor Brand",
                         "content":"Intel"
                     },
                     {
                         "name":"Processor Name",
-                        "content":"Core Ultra 5"
+                        "content":"Core i5"
+                    },
+                    {
+                        "name":"Processor Generation",
+                        "content":"12th Gen"
                     },
                     {
                         "name":"SSD",
@@ -67,7 +103,7 @@
                     },
                     {
                         "name":"SSD Capacity",
-                        "content":"1 TB"
+                        "content":"512 GB"
                     },
                     {
                         "name":"RAM",
@@ -75,19 +111,19 @@
                     },
                     {
                         "name":"RAM Type",
-                        "content":"LPDDR5X"
+                        "content":"DDR4"
                     },
                     {
                         "name":"Processor Variant",
-                        "content":"125H"
+                        "content":"12450H"
                     },
                     {
                         "name":"Clock Speed",
-                        "content":"Max Turbo up to 4.5Ghz"
+                        "content":"3.3 GHz upto max turbo frequency at 4.4 Ghz"
                     },
                     {
                         "name":"Graphic Processor",
-                        "content":"Intel Integrated Arc"
+                        "content":"NVIDIA GeForce RTX 2050"
                     }
                 ]
             },
@@ -105,11 +141,7 @@
                 "properties":[
                     {
                         "name":"USB Port",
-                        "content":"1 x USB-A (USB 5Gbps / USB 3.2 Gen 1), 1 x USB-A (USB 5Gbps / USB 3.2 Gen 1), Always On, 2 x USB-C (USB 5Gbps / USB 3.2 Gen 1), with USB PD 3.0 and DisplayPort 1.4"
-                    },
-                    {
-                        "name":"HDMI Port",
-                        "content":"1x HDMI 1.4b"
+                        "content":"1 x USB 3.2 port with power-off charging, 2 x USB 3.2 port, 1 x USB Type-C port /Thunderbolt 4 port"
                     }
                 ]
             },
@@ -122,15 +154,15 @@
                     },
                     {
                         "name":"Screen Size",
-                        "content":"35.56 cm (14 Inch)"
+                        "content":"39.62 cm (15.6 Inch)"
                     },
                     {
                         "name":"Screen Resolution",
-                        "content":"1920 x 1200 Pixel"
+                        "content":"1920 x 1080 Pixel"
                     },
                     {
                         "name":"Screen Type",
-                        "content":"WUXGA, OLED 400nits Glossy, 100% DCI-P3, 60Hz, DisplayHDR True Black 500"
+                        "content":"Full HD, display with IPS (In-Plane Switching) technology, Acer ComfyView LED-backlit TFT LCD"
                     },
                     {
                         "name":"Speakers",
@@ -147,11 +179,11 @@
                 "properties":[
                     {
                         "name":"Wireless LAN",
-                        "content":"Wi-Fi 6E, 11ax 2x2"
+                        "content":"Intel Wireless Wi-Fi 6E AX211"
                     },
                     {
                         "name":"Bluetooth",
-                        "content":"v5.3"
+                        "content":"v5.1"
                     }
                 ]
             },
@@ -160,11 +192,11 @@
                 "properties":[
                     {
                         "name":"Dimensions",
-                        "content":"312 x 221 x 16.9-17.9 mm"
+                        "content":"362.3 x 237.4 x /19.9 mm"
                     },
                     {
                         "name":"Weight",
-                        "content":"1.46 Kg"
+                        "content":"2.1 Kg"
                     }
                 ]
             },
@@ -176,16 +208,12 @@
                         "content":"Not Available"
                     },
                     {
-                        "name":"Web Camera",
-                        "content":"FHD 1080p + IR with Privacy Shutter, ToF Sensor"
-                    },
-                    {
                         "name":"Finger Print Sensor",
-                        "content":"No"
+                        "content":"Yes"
                     },
                     {
                         "name":"Keyboard",
-                        "content":"Backlit, English"
+                        "content":"99-/100-/103-key Acer backlit keyboard with international language support, with indicators of CapsLock and F4/Microphone mute"
                     }
                 ]
             },
@@ -194,7 +222,7 @@
                 "properties":[
                     {
                         "name":"Warranty Summary",
-                        "content":"1 Year Onsite warranty"
+                        "content":"1 Year Onsite Warranty"
                     },
                     {
                         "name":"Warranty Service Type",
@@ -202,7 +230,7 @@
                     },
                     {
                         "name":"Covered in Warranty",
-                        "content":"Manufacturing defects"
+                        "content":"Manufacturing Defects"
                     },
                     {
                         "name":"Not Covered in Warranty",
@@ -211,36 +239,8 @@
                 ]
             }
         ],
-        "ratings":[
-            {
-                "Overall":"4.3"
-            }
-        ],
-        "reviews":[
-            {
-                "rating":"4",
-                "title":"Value-for-money",
-                "content":"Looks good.. Build quality is solid.. very little flex. OLED Screen is awesome. cannot test the performance but RAM on this machine is of 7500 Mhz approx and best in class LPDDR5XSpeakers are not loud enough. Expected the speakers like previous lenovo laptop but the front firing speakers on this model is just average or below-average..Feels slight sensation while charging due to metal body.All this is based on 2 day usage..",
-                "writtenBy":"Alok Dey",
-                "numberOfLikes":"1",
-                "numberOfDislikes":"0"
-            },
-            {
-                "rating":"4",
-                "title":"Good choice",
-                "content":"I got ultra 5 125H 14 inch OLD model around 69.6k after purchase i received with in 2 days......I feel the display of the laptop is so nice and bild quality of the laptop also good and performence we need check....Camera also pretty good and  auto zooming and auto focus, portrait modes i like very much.....But one thing I disappointed is audio quality is not much good...I fell this things in 2 days usage.....Need to check performence and battery backup charging speed...But after purchase I am not happy with Flipkart because the price of the same laptop is 64.3k..😭😭😭😭😭😭",
-                "writtenBy":"Venka reddy  Pammi",
-                "numberOfLikes":"1",
-                "numberOfDislikes":"0"
-            },
-            {
-                "rating":"4",
-                "title":"Worth the money",
-                "content":"Great Display.Great buildGreat processor I think at this price it is the best laptop as of now✌️",
-                "writtenBy":"Yash Patel",
-                "numberOfLikes":"0",
-                "numberOfDislikes":"0"
-            }
-        ]
+        "ratings":[],
+        "reviews":[],
+        "customer_questions":null
     }
 ]

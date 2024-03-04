@@ -13,15 +13,17 @@ def get_laptop_reviews(url):
     soup = BeautifulSoup(content, "html.parser")
 
     reviews = []
-    #burayı yapmada kaldık bütün sayfaları dolaşıp yorumları alacak
-    page_number_container_nav = soup.find('nav', attrs={'class':'yFHi8N'}).contents[0]
+
+    # get first page reviews
     get_reviews_on_a_page(url,driver,reviews)
 
-    # for index, a in enumerate(page_number_container_nav.contents[1:]):
-    #     driver.get("https://www.flipkart.com" + a['href'])
-    #     content = driver.page_source
-    #     soup = BeautifulSoup(content, "html.parser")
-    #     ratings[rating_categories[index]] = soup.find('text', attrs={'class':'_2Ix0io'}).string
+    page_count = int(soup.find('div', attrs={'class':'_2MImiq _1Qnn1K'}).contents[0].text.split(" ")[-1].strip())       
+    current_page_number = 2
+    # get reviews of the remaining pages
+    while current_page_number <= page_count:
+        reviews_url = url + f"&page={current_page_number}"
+        get_reviews_on_a_page(reviews_url ,driver, reviews)
+        current_page_number  += 1
     
     driver.quit()
     return reviews
