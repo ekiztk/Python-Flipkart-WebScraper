@@ -12,48 +12,47 @@ def get_laptop_customer_questions(url):
     content = driver.page_source
     soup = BeautifulSoup(content, "html.parser")
     
-    all_questions_a = soup.find('div', attrs={'class':'_2KpZ6l dVBe_p'}) 
+    all_questions_a = soup.find('a', attrs={'class':'_2KpZ6l dVBe_p'}) 
+    print(all_questions_a)
     customer_questions = []
     # check if questions are less than three
     if all_questions_a is None:
         questions_div_arr = soup.find_all('div', attrs={'class':'_1RWRBu'})
         for parent in questions_div_arr:
-            customer_questions.append(get_a_question_and_answers(parent,driver,url)) 
+            customer_question = get_a_question_and_answers(parent)
+            customer_questions.append(customer_question) 
+    else:
+        driver.get("https://www.flipkart.com" + all_questions_a['href'])
+        print("https://www.flipkart.com" + all_questions_a['href'])
+        content = driver.page_source
+        soup = BeautifulSoup(content, "html.parser")
+
+        load_more_a = driver.find_element(By.CLASS_NAME,"_2bO-d3")
+        try:
+            while load_more_a is not None:
+                load_more_a.click()
+                sleep(1)
+                load_more_a = driver.find_element(By.CLASS_NAME,"_2bO-d3")
+        except:
+            pass
+
+        updatedSoup = BeautifulSoup(driver.page_source, "html.parser")
+        questions_div_arr = updatedSoup.find_all('div', attrs={'class':'_1RWRBu'})
+        for parent in questions_div_arr:
+            customer_question = get_a_question_and_answers(parent)
+            customer_questions.append(customer_question)
 
     return customer_questions
 
 
-def get_a_question_and_answers(parent_div, webDriver=None, url=None):
-    multiple_answers_a = parent_div.find('a', attrs={'class':'nC1FHF'})
-    print(multiple_answers_a)
-    if multiple_answers_a is not None:
-        #hata burda, soruya özel cevapler penceresini nasıl açarız?
-        print(multiple_answers_a)
-        multiple_answers_a = webDriver.find_element(By.CLASS_NAME, "selected_answers_by_scraper")
-        multiple_answers_a.click()
+def get_a_question_and_answers(parent_div):
+    question = parent_div.contents[0].contents[0].contents[1].text
+    content = parent_div.contents[0].contents[1].contents[0].contents[1].text
+    answeredBy = parent_div.contents[0].contents[1].contents[1].contents[0].contents[0].contents[0].text
+    answererRole = parent_div.contents[0].contents[1].contents[1].contents[0].contents[1].text
+    numberOfLikes = parent_div.contents[0].contents[1].contents[1].contents[1].contents[0].text
+    numberOfDislikes = parent_div.contents[0].contents[1].contents[1].contents[1].contents[1].text
 
-        sleep(10)
-
-        updatedSoup = BeautifulSoup(webDriver.page_source, "html.parser")
-        question = updatedSoup.find('a', attrs={'class':'_1xR0kG _3cziW5 Xj9vSS _1N3Db8'}).text
-        answers_div_arr =  updatedSoup.find_all('div', attrs={'class':'_1RWRBu rR7Fqx'}) 
-
-        answers = []
-        for parent in answers_div_arr:
-            content = parent.contents[0].contents[0].contents[1].text
-            numberOfLikes = parent_div.contents[0].contents[1].contents[1].contents[0].contents[1].text
-            numberOfDislikes = parent_div.contents[0].contents[1].contents[1].contents[1].contents[1].text
-            answers.append({ "content": content, "numberOfLikes":numberOfLikes, "numberOfDislikes":numberOfDislikes}) 
-                
-        close_btn = updatedSoup.find('button', attrs={'class':'_2KpZ6l _1KAjNd'})
-        close_btn.click()
-        multiple_answers_a['class'] = "nC1FHF"
-
-        return { "question": question, "answers": answers}
-    else:
-        question = parent_div.contents[0].contents[0].contents[1].text
-        content = parent_div.contents[0].contents[1].contents[0].contents[1].text
-        numberOfLikes = parent_div.contents[0].contents[1].contents[1].contents[0].contents[1].text
-        numberOfDislikes = parent_div.contents[0].contents[1].contents[1].contents[1].contents[1].text
-
-        return { "question": question, "answers": [{ "content": content, "numberOfLikes":numberOfLikes, "numberOfDislikes":numberOfDislikes}]}
+    return { "question": question, 
+            "answers": [{ "content": content, "answeredBy":answeredBy,"answererRole": answererRole, 
+                        "numberOfLikes":numberOfLikes, "numberOfDislikes":numberOfDislikes}]}

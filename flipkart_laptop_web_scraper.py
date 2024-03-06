@@ -46,7 +46,7 @@ if os.path.exists(file_to_save_laptop_details):
 f = open(file_to_save_laptop_details, "x")
 
 #burda urlleri dosyadan alacak
-for url in ["https://www.flipkart.com/acer-aspire-7-intel-core-i5-12th-gen-12450h-16-gb-512-gb-ssd-windows-11-home-4-graphics-nvidia-geforce-rtx-2050-a715-76g-gaming-laptop/p/itmc10163b4c26a8?pid=COMGRHJUCYY63HAA&fm=organic&ppt=dynamic&ppn=dynamic&ssid=8fm0nolfeo0000001709334587337"]:
+for url in ["https://www.flipkart.com/hp-255g9-amd-ryzen-3-dual-core-ryzen3-3250-8-gb-512-gb-ssd-windows-11-home-255-g8-notebook/p/itm77dde4dbe727e?pid=COMGFBK9A3Z2QD9H&lid=LSTCOMGFBK9A3Z2QD9HP2ST2L&marketplace=FLIPKART&fm=organic&iid=9cfa78d4-1307-46c0-8046-13de8d2e096b.COMGFBK9A3Z2QD9H.PRODUCTSUMMARY&ppt=pp&ppn=pp&ssid=bt5pv8zats0000001709727566595"]:
     driver.get(url)
     content = driver.page_source
     soup = BeautifulSoup(content, "html.parser")
@@ -83,7 +83,7 @@ for url in ["https://www.flipkart.com/acer-aspire-7-intel-core-i5-12th-gen-12450
     # Get construction information
     # WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "div._1JDTUN"))).click()
     
-    # # Get ratings
+    # Get ratings
     ratings = []
     # all_reviews_div = soup.find('div', attrs={'class':'_3UAT2v _16PBlm'})
     # ratings_div = soup.find('div', class_='_2e3Uck')
@@ -98,7 +98,7 @@ for url in ["https://www.flipkart.com/acer-aspire-7-intel-core-i5-12th-gen-12450
     #     overall_rating = ratings_div.contents[0].contents[0].contents[0].contents[0].contents[0].contents[0].text
     #     ratings.append({"Overall": overall_rating})
 
-    # # Get reviews
+    # Get reviews
     reviews = []
     # review_div_arr = soup.find_all('div', class_='col _2wzgFH')
     # #if review count is greater than three then go to reviews page
@@ -110,7 +110,7 @@ for url in ["https://www.flipkart.com/acer-aspire-7-intel-core-i5-12th-gen-12450
     # elif review_div_arr:
     #     get_reviews_on_a_page(url,driver,reviews,"col _2wzgFH")
 
-    # Get questions and answers
+    # Get customer questions
     customer_questions = []
     questions_answers_title_div = soup.find('div', attrs={'class':'_2n4XY2 _1d7nTU col'})
     # check if Questions and Answers exits
