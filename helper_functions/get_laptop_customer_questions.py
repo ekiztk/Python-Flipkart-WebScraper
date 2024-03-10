@@ -13,7 +13,6 @@ def get_laptop_customer_questions(url):
     soup = BeautifulSoup(content, "html.parser")
     
     all_questions_a = soup.find('a', attrs={'class':'_2KpZ6l dVBe_p'}) 
-    print(all_questions_a)
     customer_questions = []
     # check if questions are less than three
     if all_questions_a is None:
@@ -23,7 +22,6 @@ def get_laptop_customer_questions(url):
             customer_questions.append(customer_question) 
     else:
         driver.get("https://www.flipkart.com" + all_questions_a['href'])
-        print("https://www.flipkart.com" + all_questions_a['href'])
         content = driver.page_source
         soup = BeautifulSoup(content, "html.parser")
 

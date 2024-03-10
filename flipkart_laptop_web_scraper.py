@@ -41,7 +41,7 @@ if os.path.exists(file_to_save_laptop_details):
 
 f = open(file_to_save_laptop_details, "x")
 
-# Laptops will be scraping
+# Laptops that will be being scrapped
 for url in ["https://www.flipkart.com/hp-255g9-amd-ryzen-3-dual-core-ryzen3-3250-8-gb-512-gb-ssd-windows-11-home-255-g8-notebook/p/itm77dde4dbe727e?pid=COMGFBK9A3Z2QD9H&lid=LSTCOMGFBK9A3Z2QD9HP2ST2L&marketplace=FLIPKART&fm=organic&iid=9cfa78d4-1307-46c0-8046-13de8d2e096b.COMGFBK9A3Z2QD9H.PRODUCTSUMMARY&ppt=pp&ppn=pp&ssid=bt5pv8zats0000001709727566595"]:
     driver.get(url)
     content = driver.page_source
@@ -53,6 +53,12 @@ for url in ["https://www.flipkart.com/hp-255g9-amd-ryzen-3-dual-core-ryzen3-3250
     highlights = []
     for li in highlights_li_arr:
         highlights.append(li.string)
+
+    # Get description
+    description_div = soup.find('div', attrs={'class':'_1mXcCf RmoJUa'})
+    description = ""
+    if description_div:
+        description = description_div.contents[0].text
 
     # Get features (optional)
     features_div_arr =  soup.find_all('div', attrs={'class':'_3qWObK'})
@@ -116,7 +122,7 @@ for url in ["https://www.flipkart.com/hp-255g9-amd-ryzen-3-dual-core-ryzen3-3250
         customer_questions = questions_thread.join()
 
     # Add the laptop to the array (Ending)
-    laptop = Laptop(url=url,name=name,highlights=highlights,features=features,
+    laptop = Laptop(url=url,name=name,highlights=highlights,description = description,features=features,
                     specifications=specifications,ratings=ratings,
                     reviews=reviews,customer_questions=customer_questions)
     

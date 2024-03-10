@@ -27,7 +27,7 @@ Flipkart website scraper for 2024.
 <h2>Products:</h2>
     <h3>1. Laptops:</h3>
         <ul>
-            <li>Strores urls of laptops in laptop_urls.csv.</li>
+            <li>Stores urls of laptops in laptop_urls.csv.</li>
             <li>Stores data of laptops in laptop_details.json.</li>
         </ul>
         <h4>Structure</h4>
@@ -44,7 +44,7 @@ Flipkart website scraper for 2024.
                 self.reviews = reviews
                 self.customer_questions = customer_questions
         </pre>
-        <h4>Output</h4>
+        <h4>Sample Output</h4>
         <pre lang="json">[
     {
         "url":"https://www.flipkart.com/hp-255g9-amd-ryzen-3-dual-core-ryzen3-3250-8-gb-512-gb-ssd-windows-11-home-255-g8-notebook/p/itm77dde4dbe727e?pid=COMGFBK9A3Z2QD9H&lid=LSTCOMGFBK9A3Z2QD9HP2ST2L&marketplace=FLIPKART&fm=organic&iid=9cfa78d4-1307-46c0-8046-13de8d2e096b.COMGFBK9A3Z2QD9H.PRODUCTSUMMARY&ppt=pp&ppn=pp&ssid=bt5pv8zats0000001709727566595",
@@ -53,6 +53,7 @@ Flipkart website scraper for 2024.
             "15.6 inch FHD SVA anti-glare WLED-backlit",
             "Light Laptop without Optical Disk Drive"
         ],
+        "description":"HP 255 G8  62Y23PA (AMD Ryzen 3-3250U/ 8GB Ram/ 512 Gb SSD / 39.62 cm (15.6 inch) HD/Windows 11/AMD Radeon Vega 8 Graphics/ Dark Ash Silver/1.74Kg 1 Year Warranty",
         "features":[],
         "specifications":[
             {
@@ -272,10 +273,12 @@ Flipkart website scraper for 2024.
                         "answererRole":"Flipkart Seller",
                         "numberOfLikes":"4",
                         "numberOfDislikes":"2"
-                    }
+                    },
+                    ...
                 ]
             },
         ]
+        ...
     }
 ]</pre>
 
