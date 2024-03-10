@@ -17,14 +17,16 @@ def get_laptop_reviews(url):
     # get first page reviews
     get_reviews_on_a_page(url,driver,reviews)
 
-    page_count = int(soup.find('div', attrs={'class':'_2MImiq _1Qnn1K'}).contents[0].text.split(" ")[-1].strip())       
-    current_page_number = 2
-    # get reviews of the remaining pages
-    while current_page_number <= page_count:
-        reviews_url = url + f"&page={current_page_number}"
-        get_reviews_on_a_page(reviews_url ,driver, reviews)
-        current_page_number  += 1
-    
+    page_numbers_div = soup.find('div', attrs={'class':'_2MImiq _1Qnn1K'})
+    if page_numbers_div:
+        page_count = int(page_numbers_div.contents[0].text.split(" ")[-1].strip()) 
+        current_page_number = 2
+        # get reviews of the remaining pages
+        while current_page_number <= page_count:
+            reviews_url = url + f"&page={current_page_number}"
+            get_reviews_on_a_page(reviews_url ,driver, reviews)
+            current_page_number  += 1
+
     driver.quit()
     return reviews
 

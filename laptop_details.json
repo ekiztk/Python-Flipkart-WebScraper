@@ -1,7 +1,7 @@
 [
     {
         "url":"https://www.flipkart.com/hp-255g9-amd-ryzen-3-dual-core-ryzen3-3250-8-gb-512-gb-ssd-windows-11-home-255-g8-notebook/p/itm77dde4dbe727e?pid=COMGFBK9A3Z2QD9H&lid=LSTCOMGFBK9A3Z2QD9HP2ST2L&marketplace=FLIPKART&fm=organic&iid=9cfa78d4-1307-46c0-8046-13de8d2e096b.COMGFBK9A3Z2QD9H.PRODUCTSUMMARY&ppt=pp&ppn=pp&ssid=bt5pv8zats0000001709727566595",
-        "name":"HP 255G9 AMD Ryzen 3 Dual Core AMD Ryzen3 3250 - (8 GB/512 GB SSD/Windows 11 Home) 255 G8 Notebook Notebook  (15.6 inch, Dark Ash, 1.78 kg)",
+        "name":"HP 255 G9 AMD Ryzen 3 Dual Core AMD Ryzen3 3250 - (8 GB/512 GB SSD/Windows 11 Home) 255 G8 Notebook Notebook  (15.6 inch, Dark Ash, 1.78 kg)",
         "highlights":[
             "15.6 inch FHD SVA anti-glare WLED-backlit",
             "Light Laptop without Optical Disk Drive"
@@ -25,11 +25,11 @@
                     },
                     {
                         "name":"Model Name",
-                        "content":"HP 255G9"
+                        "content":"HP 255 g8 Laptop"
                     },
                     {
                         "name":"Series",
-                        "content":"255G9"
+                        "content":"255 G9"
                     },
                     {
                         "name":"Color",
@@ -213,7 +213,7 @@
                     },
                     {
                         "name":"Screen Resolution",
-                        "content":"1920 * 1080 pixel"
+                        "content":"1366 x 768 pixel pixel"
                     },
                     {
                         "name":"Screen Type",
@@ -366,8 +366,96 @@
                 ]
             }
         ],
-        "ratings":[],
-        "reviews":[],
+        "ratings":{
+            "Overall":"4.2",
+            "Performance":"4.0",
+            "Battery":"3.8",
+            "Design":"4.2",
+            "Display":"3.8",
+            "Value for Money":"4.0"
+        },
+        "reviews":[
+            {
+                "rating":"1",
+                "title":"Useless product",
+                "content":"Issues coming after 15 days only regarding software",
+                "writtenBy":"Amit Kumar  Mahaur",
+                "numberOfLikes":"26",
+                "numberOfDislikes":"6"
+            },
+            {
+                "rating":"4",
+                "title":"Delightful",
+                "content":"Very useful product.",
+                "writtenBy":"P K Mishra",
+                "numberOfLikes":"56",
+                "numberOfDislikes":"19"
+            },
+            {
+                "rating":"5",
+                "title":"Worth every penny",
+                "content":"Best in this price but the display is hd not fhd.",
+                "writtenBy":"Akash Kadam",
+                "numberOfLikes":"34",
+                "numberOfDislikes":"11"
+            },
+            {
+                "rating":"5",
+                "title":"Wonderful",
+                "content":"Very nice 🙂👍",
+                "writtenBy":"Shaheen  Parveen",
+                "numberOfLikes":"10",
+                "numberOfDislikes":"8"
+            },
+            {
+                "rating":"5",
+                "title":"Wonderful",
+                "content":"Very good product",
+                "writtenBy":"Prince  Kumar",
+                "numberOfLikes":"2",
+                "numberOfDislikes":"1"
+            },
+            {
+                "rating":"4",
+                "title":"Pretty good",
+                "content":"Nice",
+                "writtenBy":"Purna Neelapu",
+                "numberOfLikes":"2",
+                "numberOfDislikes":"1"
+            },
+            {
+                "rating":"5",
+                "title":"Terrific purchase",
+                "content":"Very good quality laptop I like it this product 👍",
+                "writtenBy":"Malina Subba",
+                "numberOfLikes":"0",
+                "numberOfDislikes":"0"
+            },
+            {
+                "rating":"5",
+                "title":"Classy product",
+                "content":"Very good quality",
+                "writtenBy":"Aman  Dixit",
+                "numberOfLikes":"0",
+                "numberOfDislikes":"0"
+            },
+            {
+                "rating":"5",
+                "title":"Simply awesome",
+                "content":"Good",
+                "writtenBy":"Prabhat   Naskar",
+                "numberOfLikes":"0",
+                "numberOfDislikes":"0"
+            },
+            {
+                "rating":"3",
+                "title":"Fair",
+                "content":"Good",
+                "writtenBy":"Prem  Ramchiary",
+                "numberOfLikes":"0",
+                "numberOfDislikes":"0"
+            }
+        ],
         "customer_questions":[
             {
                 "question":"Is this with md office",
@@ -376,7 +464,7 @@
                         "content":"NO",
                         "answeredBy":"MaxInfo",
                         "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"14",
+                        "numberOfLikes":"15",
                         "numberOfDislikes":"7"
                     }
                 ]
@@ -401,7 +489,7 @@
                         "answeredBy":"MaxInfo",
                         "answererRole":"Flipkart Seller",
                         "numberOfLikes":"15",
-                        "numberOfDislikes":"11"
+                        "numberOfDislikes":"13"
                     }
                 ]
             },
@@ -832,7 +920,7 @@
                         "content":"yes",
                         "answeredBy":"KINGSCOMPUTERS",
                         "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"0",
+                        "numberOfLikes":"1",
                         "numberOfDislikes":"0"
                     }
                 ]
@@ -1072,8 +1160,32 @@
                         "content":"No",
                         "answeredBy":"KINGSCOMPUTERS",
                         "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"11",
+                        "numberOfLikes":"12",
                         "numberOfDislikes":"3"
+                    }
+                ]
+            },
+            {
+                "question":"It has cooling fan",
+                "answers":[
+                    {
+                        "content":"Yes",
+                        "answeredBy":"KINGSCOMPUTERS",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"2",
+                        "numberOfDislikes":"0"
+                    }
+                ]
+            },
+            {
+                "question":"Battery backup kitna hai",
+                "answers":[
+                    {
+                        "content":"Nothing it's very bad product",
+                        "answeredBy":"Anonymous",
+                        "answererRole":"Certified Buyer",
+                        "numberOfLikes":"6",
+                        "numberOfDislikes":"10"
                     }
                 ]
             },
@@ -1090,6 +1202,18 @@
                 ]
             },
             {
+                "question":"I CAN PLAY games like GTA, free fire, PUBG,",
+                "answers":[
+                    {
+                        "content":"No",
+                        "answeredBy":"MaxInfo",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"1",
+                        "numberOfDislikes":"2"
+                    }
+                ]
+            },
+            {
                 "question":"Can I play free fire",
                 "answers":[
                     {
@@ -1098,18 +1222,6 @@
                         "answererRole":"Flipkart Seller",
                         "numberOfLikes":"5",
                         "numberOfDislikes":"4"
-                    }
-                ]
-            },
-            {
-                "question":"Battery backup kitna hai",
-                "answers":[
-                    {
-                        "content":"Nothing it's very bad product",
-                        "answeredBy":"Anonymous",
-                        "answererRole":"Certified Buyer",
-                        "numberOfLikes":"6",
-                        "numberOfDislikes":"9"
                     }
                 ]
             },
@@ -1158,18 +1270,6 @@
                         "answererRole":"Flipkart Seller",
                         "numberOfLikes":"2",
                         "numberOfDislikes":"1"
-                    }
-                ]
-            },
-            {
-                "question":"It has cooling fan",
-                "answers":[
-                    {
-                        "content":"Yes",
-                        "answeredBy":"KINGSCOMPUTERS",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"1",
-                        "numberOfDislikes":"0"
                     }
                 ]
             },
@@ -1230,18 +1330,6 @@
                         "answererRole":"Flipkart Seller",
                         "numberOfLikes":"1",
                         "numberOfDislikes":"0"
-                    }
-                ]
-            },
-            {
-                "question":"I CAN PLAY games like GTA, free fire, PUBG,",
-                "answers":[
-                    {
-                        "content":"No",
-                        "answeredBy":"MaxInfo",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"1",
-                        "numberOfDislikes":"1"
                     }
                 ]
             },

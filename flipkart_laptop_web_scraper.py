@@ -4,9 +4,6 @@ from selenium.webdriver.chrome.service import Service as ChromeService
 from bs4 import BeautifulSoup
 import pandas as pd
 import os
-# from selenium.webdriver.support.ui import WebDriverWait
-# from selenium.webdriver.common.by import By
-# from selenium.webdriver.support import expected_conditions as EC
 from classes.WebDriverThread import WebDriverThread
 from helper_functions.get_laptop_customer_questions import get_laptop_customer_questions
 from helper_functions.get_laptop_ratings import get_laptop_ratings
@@ -45,7 +42,7 @@ if os.path.exists(file_to_save_laptop_details):
 
 f = open(file_to_save_laptop_details, "x")
 
-#burda urlleri dosyadan alacak
+# Laptops will be scraping
 for url in ["https://www.flipkart.com/hp-255g9-amd-ryzen-3-dual-core-ryzen3-3250-8-gb-512-gb-ssd-windows-11-home-255-g8-notebook/p/itm77dde4dbe727e?pid=COMGFBK9A3Z2QD9H&lid=LSTCOMGFBK9A3Z2QD9HP2ST2L&marketplace=FLIPKART&fm=organic&iid=9cfa78d4-1307-46c0-8046-13de8d2e096b.COMGFBK9A3Z2QD9H.PRODUCTSUMMARY&ppt=pp&ppn=pp&ssid=bt5pv8zats0000001709727566595"]:
     driver.get(url)
     content = driver.page_source
@@ -85,30 +82,30 @@ for url in ["https://www.flipkart.com/hp-255g9-amd-ryzen-3-dual-core-ryzen3-3250
     
     # Get ratings
     ratings = []
-    # all_reviews_div = soup.find('div', attrs={'class':'_3UAT2v _16PBlm'})
-    # ratings_div = soup.find('div', class_='_2e3Uck')
-    # #if review count is greater than three then go to reviews page
-    # if all_reviews_div:
-    #     rating_url = "https://www.flipkart.com" + all_reviews_div.parent.get('href')
-    #     ratings_thread = WebDriverThread(target=get_laptop_ratings, args=(rating_url,))
-    #     ratings_thread.start()
-    #     ratings = ratings_thread.join()
-    # #if review count is less than three then get ratings from the current page
-    # elif ratings_div:
-    #     overall_rating = ratings_div.contents[0].contents[0].contents[0].contents[0].contents[0].contents[0].text
-    #     ratings.append({"Overall": overall_rating})
+    all_reviews_div = soup.find('div', attrs={'class':'_3UAT2v _16PBlm'})
+    ratings_div = soup.find('div', class_='_2e3Uck')
+    #if review count is greater than three then go to reviews page
+    if all_reviews_div:
+        rating_url = "https://www.flipkart.com" + all_reviews_div.parent.get('href')
+        ratings_thread = WebDriverThread(target=get_laptop_ratings, args=(rating_url,))
+        ratings_thread.start()
+        ratings = ratings_thread.join()
+    #if review count is less than three then get ratings from the current page
+    elif ratings_div:
+        overall_rating = ratings_div.contents[0].contents[0].contents[0].contents[0].contents[0].contents[0].text
+        ratings.append({"Overall": overall_rating})
 
     # Get reviews
     reviews = []
-    # review_div_arr = soup.find_all('div', class_='col _2wzgFH')
-    # #if review count is greater than three then go to reviews page
-    # if all_reviews_div:
-    #     reviews_thread = WebDriverThread(target=get_laptop_reviews, args=(rating_url,))
-    #     reviews_thread.start()
-    #     reviews = reviews_thread.join()
-    # #if review count is less than three then get ratings from the current page
-    # elif review_div_arr:
-    #     get_reviews_on_a_page(url,driver,reviews,"col _2wzgFH")
+    review_div_arr = soup.find_all('div', class_='col _2wzgFH')
+    #if review count is greater than three then go to reviews page
+    if all_reviews_div:
+        reviews_thread = WebDriverThread(target=get_laptop_reviews, args=(rating_url,))
+        reviews_thread.start()
+        reviews = reviews_thread.join()
+    #if review count is less than three then get ratings from the current page
+    elif review_div_arr:
+        get_reviews_on_a_page(url,driver,reviews,"col _2wzgFH")
 
     # Get customer questions
     customer_questions = []
