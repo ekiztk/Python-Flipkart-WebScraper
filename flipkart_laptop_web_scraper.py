@@ -11,7 +11,6 @@ from helper_functions.get_laptop_reviews import get_laptop_reviews, get_reviews_
 from helper_functions.write_array_to_json import write_array_to_json
 from classes.laptop import Laptop
 
-
 driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install())) 
 driver.implicitly_wait(5)
 
