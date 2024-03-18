@@ -3,7 +3,7 @@
         "url":"https://www.flipkart.com/hp-255g9-amd-ryzen-3-dual-core-ryzen3-3250-8-gb-512-gb-ssd-windows-11-home-255-g8-notebook/p/itm77dde4dbe727e?pid=COMGFBK9A3Z2QD9H&lid=LSTCOMGFBK9A3Z2QD9HP2ST2L&marketplace=FLIPKART&fm=organic&iid=9cfa78d4-1307-46c0-8046-13de8d2e096b.COMGFBK9A3Z2QD9H.PRODUCTSUMMARY&ppt=pp&ppn=pp&ssid=bt5pv8zats0000001709727566595",
         "name":"HP 255 G9 AMD Ryzen 3 Dual Core AMD Ryzen3 3250 - (8 GB/512 GB SSD/Windows 11 Home) 255 G8 Notebook Notebook  (15.6 inch, Dark Ash, 1.78 kg)",
         "highlights":[
-            "15.6 inch FHD SVA anti-glare WLED-backlit",
+            "15.6 inch HD",
             "Light Laptop without Optical Disk Drive"
         ],
         "description":"HP 255 G8  62Y23PA (AMD Ryzen 3-3250U/ 8GB Ram/ 512 Gb SSD / 39.62 cm (15.6 inch) HD/Windows 11/AMD Radeon Vega 8 Graphics/ Dark Ash Silver/1.74Kg 1 Year Warranty",
@@ -26,7 +26,7 @@
                     },
                     {
                         "name":"Model Name",
-                        "content":"HP 255 g8 Laptop"
+                        "content":"HP255g9"
                     },
                     {
                         "name":"Series",
@@ -218,7 +218,7 @@
                     },
                     {
                         "name":"Screen Type",
-                        "content":"FHD SVA anti-glare WLED-backlit"
+                        "content":"HD"
                     },
                     {
                         "name":"Speakers",
@@ -368,28 +368,20 @@
             }
         ],
         "ratings":{
-            "Overall":"4.2",
-            "Performance":"4.0",
-            "Battery":"3.8",
-            "Design":"4.2",
-            "Display":"3.8",
-            "Value for Money":"4.0"
+            "Overall":"4.3",
+            "Performance":"4.1",
+            "Battery":"3.9",
+            "Design":"4.3",
+            "Display":"4.0",
+            "Value for Money":"4.1"
         },
         "reviews":[
-            {
-                "rating":"1",
-                "title":"Useless product",
-                "content":"Issues coming after 15 days only regarding software",
-                "writtenBy":"Amit Kumar  Mahaur",
-                "numberOfLikes":"26",
-                "numberOfDislikes":"6"
-            },
             {
                 "rating":"4",
                 "title":"Delightful",
                 "content":"Very useful product.",
                 "writtenBy":"P K Mishra",
-                "numberOfLikes":"56",
+                "numberOfLikes":"58",
                 "numberOfDislikes":"19"
             },
             {
@@ -397,7 +389,7 @@
                 "title":"Worth every penny",
                 "content":"Best in this price but the display is hd not fhd.",
                 "writtenBy":"Akash Kadam",
-                "numberOfLikes":"34",
+                "numberOfLikes":"40",
                 "numberOfDislikes":"11"
             },
             {
@@ -413,7 +405,7 @@
                 "title":"Wonderful",
                 "content":"Very good product",
                 "writtenBy":"Prince  Kumar",
-                "numberOfLikes":"2",
+                "numberOfLikes":"3",
                 "numberOfDislikes":"1"
             },
             {
@@ -423,6 +415,14 @@
                 "writtenBy":"Purna Neelapu",
                 "numberOfLikes":"2",
                 "numberOfDislikes":"1"
+            },
+            {
+                "rating":"1",
+                "title":"Useless product",
+                "content":"Issues coming after 15 days only regarding software",
+                "writtenBy":"Amit Kumar  Mahaur",
+                "numberOfLikes":"31",
+                "numberOfDislikes":"6"
             },
             {
                 "rating":"5",
@@ -459,589 +459,13 @@
         ],
         "customer_questions":[
             {
-                "question":"Back light is here on this laptop",
-                "answers":[
-                    {
-                        "content":"No",
-                        "answeredBy":"KINGSCOMPUTERS",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"12",
-                        "numberOfDislikes":"3"
-                    }
-                ]
-            },
-            {
-                "question":"It has cooling fan",
-                "answers":[
-                    {
-                        "content":"Yes",
-                        "answeredBy":"KINGSCOMPUTERS",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"2",
-                        "numberOfDislikes":"0"
-                    }
-                ]
-            },
-            {
-                "question":"Battery backup kitna hai",
-                "answers":[
-                    {
-                        "content":"Nothing it's very bad product",
-                        "answeredBy":"Anonymous",
-                        "answererRole":"Certified Buyer",
-                        "numberOfLikes":"6",
-                        "numberOfDislikes":"10"
-                    }
-                ]
-            },
-            {
-                "question":"Can I play roblox on it",
-                "answers":[
-                    {
-                        "content":"YES",
-                        "answeredBy":"KINGSCOMPUTERS",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"2",
-                        "numberOfDislikes":"2"
-                    }
-                ]
-            },
-            {
-                "question":"I CAN PLAY games like GTA, free fire, PUBG,",
-                "answers":[
-                    {
-                        "content":"No",
-                        "answeredBy":"MaxInfo",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"1",
-                        "numberOfDislikes":"2"
-                    }
-                ]
-            },
-            {
-                "question":"Can I play free fire",
-                "answers":[
-                    {
-                        "content":"YES",
-                        "answeredBy":"KINGSCOMPUTERS",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"5",
-                        "numberOfDislikes":"4"
-                    }
-                ]
-            },
-            {
-                "question":"Can i edit vedios",
-                "answers":[
-                    {
-                        "content":"no",
-                        "answeredBy":"NiceLaptops",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"1",
-                        "numberOfDislikes":"3"
-                    }
-                ]
-            },
-            {
-                "question":"Can I play Minecraft java",
-                "answers":[
-                    {
-                        "content":"Yes",
-                        "answeredBy":"Anonymous",
-                        "answererRole":"Certified Buyer",
-                        "numberOfLikes":"0",
-                        "numberOfDislikes":"0"
-                    }
-                ]
-            },
-            {
-                "question":"Can you get with bag",
-                "answers":[
-                    {
-                        "content":"No",
-                        "answeredBy":"shyam sunder",
-                        "answererRole":"Certified Buyer",
-                        "numberOfLikes":"0",
-                        "numberOfDislikes":"1"
-                    }
-                ]
-            },
-            {
-                "question":"Fingerprint sensor reading",
-                "answers":[
-                    {
-                        "content":"No",
-                        "answeredBy":"KINGSCOMPUTERS",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"2",
-                        "numberOfDislikes":"1"
-                    }
-                ]
-            },
-            {
-                "question":"Is it appropriate for job use?",
-                "answers":[
-                    {
-                        "content":"Yes",
-                        "answeredBy":"KINGSCOMPUTERS",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"0",
-                        "numberOfDislikes":"0"
-                    }
-                ]
-            },
-            {
-                "question":"Size of keyboard?",
-                "answers":[
-                    {
-                        "content":"(15.6 inch)",
-                        "answeredBy":"KINGSCOMPUTERS",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"1",
-                        "numberOfDislikes":"0"
-                    }
-                ]
-            },
-            {
-                "question":"Can we perform graphic designing softwares",
-                "answers":[
-                    {
-                        "content":"YES",
-                        "answeredBy":"KINGSCOMPUTERS",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"1",
-                        "numberOfDislikes":"0"
-                    }
-                ]
-            },
-            {
-                "question":"How many GB of graphics memory..?",
-                "answers":[
-                    {
-                        "content":"Its not a gamming laptop no graphics card available",
-                        "answeredBy":"MaxInfo",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"0",
-                        "numberOfDislikes":"1"
-                    }
-                ]
-            },
-            {
-                "question":"Kitne time ka backup dega",
-                "answers":[
-                    {
-                        "content":"6 HOURS",
-                        "answeredBy":"KINGSCOMPUTERS",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"1",
-                        "numberOfDislikes":"0"
-                    }
-                ]
-            },
-            {
-                "question":"Is there sim slot",
-                "answers":[
-                    {
-                        "content":"No",
-                        "answeredBy":"MaxInfo",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"0",
-                        "numberOfDislikes":"1"
-                    }
-                ]
-            },
-            {
-                "question":"Can I play some normal games in laptop",
-                "answers":[
-                    {
-                        "content":"Yes",
-                        "answeredBy":"MaxInfo",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"0",
-                        "numberOfDislikes":"0"
-                    }
-                ]
-            },
-            {
-                "question":"Is RAM upgradable and can be increased to 32GB",
-                "answers":[
-                    {
-                        "content":"Yes",
-                        "answeredBy":"MaxInfo",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"1",
-                        "numberOfDislikes":"0"
-                    }
-                ]
-            },
-            {
-                "question":"Will you give charger??",
-                "answers":[
-                    {
-                        "content":"Yes it comes with charger",
-                        "answeredBy":"MaxInfo",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"0",
-                        "numberOfDislikes":"0"
-                    }
-                ]
-            },
-            {
-                "question":"Their was low games are run",
-                "answers":[
-                    {
-                        "content":"Not for games",
-                        "answeredBy":"MaxInfo",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"0",
-                        "numberOfDislikes":"0"
-                    }
-                ]
-            },
-            {
-                "question":"Type C charging support or not?",
-                "answers":[
-                    {
-                        "content":"No",
-                        "answeredBy":"MaxInfo",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"0",
-                        "numberOfDislikes":"0"
-                    }
-                ]
-            },
-            {
-                "question":"Wifi connection available",
-                "answers":[
-                    {
-                        "content":"yes",
-                        "answeredBy":"KINGSCOMPUTERS",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"0",
-                        "numberOfDislikes":"0"
-                    }
-                ]
-            },
-            {
-                "question":"Ethernet port available or not?",
-                "answers":[
-                    {
-                        "content":"YES Ethernet port IS available",
-                        "answeredBy":"KINGSCOMPUTERS",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"0",
-                        "numberOfDislikes":"0"
-                    }
-                ]
-            },
-            {
-                "question":"It's suitable for programming",
-                "answers":[
-                    {
-                        "content":"YES",
-                        "answeredBy":"KINGSCOMPUTERS",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"1",
-                        "numberOfDislikes":"0"
-                    }
-                ]
-            },
-            {
-                "question":"Sir can I use python or Java or c language in this system",
-                "answers":[
-                    {
-                        "content":"YES YOU CAN USE IT",
-                        "answeredBy":"KINGSCOMPUTERS",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"1",
-                        "numberOfDislikes":"0"
-                    }
-                ]
-            },
-            {
-                "question":"Is it with ms office",
-                "answers":[
-                    {
-                        "content":"no you can download",
-                        "answeredBy":"KINGSCOMPUTERS",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"0",
-                        "numberOfDislikes":"0"
-                    }
-                ]
-            },
-            {
-                "question":"Can I stream from this laptop?",
-                "answers":[
-                    {
-                        "content":"No",
-                        "answeredBy":"MaxInfo",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"0",
-                        "numberOfDislikes":"0"
-                    }
-                ]
-            },
-            {
-                "question":"Is there is type c port?",
-                "answers":[
-                    {
-                        "content":"No",
-                        "answeredBy":"MaxInfo",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"0",
-                        "numberOfDislikes":"0"
-                    }
-                ]
-            },
-            {
-                "question":"Ms office provide",
-                "answers":[
-                    {
-                        "content":"no you can installed",
-                        "answeredBy":"KINGSCOMPUTERS",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"0",
-                        "numberOfDislikes":"0"
-                    }
-                ]
-            },
-            {
-                "question":"Can I install ms office",
-                "answers":[
-                    {
-                        "content":"YES",
-                        "answeredBy":"KINGSCOMPUTERS",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"1",
-                        "numberOfDislikes":"0"
-                    }
-                ]
-            },
-            {
-                "question":"Keyboard light available?",
-                "answers":[
-                    {
-                        "content":"no",
-                        "answeredBy":"KINGSCOMPUTERS",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"1",
-                        "numberOfDislikes":"0"
-                    }
-                ]
-            },
-            {
-                "question":"This is good for.?What purpose",
-                "answers":[
-                    {
-                        "content":"multimedia USE",
-                        "answeredBy":"KINGSCOMPUTERS",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"1",
-                        "numberOfDislikes":"0"
-                    }
-                ]
-            },
-            {
-                "question":"Can I create animation on this laptop ??",
-                "answers":[
-                    {
-                        "content":"yes",
-                        "answeredBy":"KINGSCOMPUTERS",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"0",
-                        "numberOfDislikes":"0"
-                    }
-                ]
-            },
-            {
-                "question":"Is MS Office available preinstalled ?",
-                "answers":[
-                    {
-                        "content":"NO",
-                        "answeredBy":"MaxInfo",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"2",
-                        "numberOfDislikes":"4"
-                    }
-                ]
-            },
-            {
-                "question":"Is Ms office installed",
-                "answers":[
-                    {
-                        "content":"no you can installed",
-                        "answeredBy":"KINGSCOMPUTERS",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"0",
-                        "numberOfDislikes":"0"
-                    }
-                ]
-            },
-            {
-                "question":"Is it good for coding",
-                "answers":[
-                    {
-                        "content":"yes",
-                        "answeredBy":"KINGSCOMPUTERS",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"0",
-                        "numberOfDislikes":"0"
-                    }
-                ]
-            },
-            {
-                "question":"Can we play GTA 5 on this laptop what graphic",
-                "answers":[
-                    {
-                        "content":"YES AND integrated Graphic",
-                        "answeredBy":"KINGSCOMPUTERS",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"0",
-                        "numberOfDislikes":"0"
-                    }
-                ]
-            },
-            {
-                "question":"Can we add ssd and ram",
-                "answers":[
-                    {
-                        "content":"YES",
-                        "answeredBy":"KINGSCOMPUTERS",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"0",
-                        "numberOfDislikes":"0"
-                    }
-                ]
-            },
-            {
-                "question":"Upgradable storage or not",
-                "answers":[
-                    {
-                        "content":"yes upgradable you can",
-                        "answeredBy":"KINGSCOMPUTERS",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"0",
-                        "numberOfDislikes":"0"
-                    }
-                ]
-            },
-            {
-                "question":"It is support both hdd ans ssd",
-                "answers":[
-                    {
-                        "content":"NO",
-                        "answeredBy":"KINGSCOMPUTERS",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"0",
-                        "numberOfDislikes":"0"
-                    }
-                ]
-            },
-            {
-                "question":"Is MS Office installed?",
-                "answers":[
-                    {
-                        "content":"no you can installed",
-                        "answeredBy":"KINGSCOMPUTERS",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"0",
-                        "numberOfDislikes":"0"
-                    }
-                ]
-            },
-            {
-                "question":"Graphic how much",
-                "answers":[
-                    {
-                        "content":"integrated graphics",
-                        "answeredBy":"KINGSCOMPUTERS",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"0",
-                        "numberOfDislikes":"0"
-                    }
-                ]
-            },
-            {
-                "question":"is it available with both hdd 512 and SSD 512???",
-                "answers":[
-                    {
-                        "content":"YES",
-                        "answeredBy":"KINGSCOMPUTERS",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"0",
-                        "numberOfDislikes":"0"
-                    }
-                ]
-            },
-            {
-                "question":"There is how many core",
-                "answers":[
-                    {
-                        "content":"Dual Core",
-                        "answeredBy":"KINGSCOMPUTERS",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"0",
-                        "numberOfDislikes":"0"
-                    }
-                ]
-            },
-            {
-                "question":"Is graphic card dedicated",
-                "answers":[
-                    {
-                        "content":"NO",
-                        "answeredBy":"KINGSCOMPUTERS",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"0",
-                        "numberOfDislikes":"0"
-                    }
-                ]
-            },
-            {
-                "question":"Can we use it for Autocad and revit software?",
-                "answers":[
-                    {
-                        "content":"YES",
-                        "answeredBy":"KINGSCOMPUTERS",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"0",
-                        "numberOfDislikes":"1"
-                    }
-                ]
-            },
-            {
-                "question":"Can i play gta v in it",
-                "answers":[
-                    {
-                        "content":"yes",
-                        "answeredBy":"KINGSCOMPUTERS",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"1",
-                        "numberOfDislikes":"0"
-                    }
-                ]
-            },
-            {
-                "question":"If it has keyboard light?",
-                "answers":[
-                    {
-                        "content":"NO",
-                        "answeredBy":"KINGSCOMPUTERS",
-                        "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"0",
-                        "numberOfDislikes":"0"
-                    }
-                ]
-            },
-            {
                 "question":"Is this with md office",
                 "answers":[
                     {
                         "content":"NO",
                         "answeredBy":"MaxInfo",
                         "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"15",
+                        "numberOfLikes":"18",
                         "numberOfDislikes":"7"
                     }
                 ]
@@ -1053,7 +477,7 @@
                         "content":"Yes",
                         "answeredBy":"KINGSCOMPUTERS",
                         "answererRole":"Flipkart Seller",
-                        "numberOfLikes":"4",
+                        "numberOfLikes":"5",
                         "numberOfDislikes":"2"
                     }
                 ]
@@ -1720,6 +1144,582 @@
             },
             {
                 "question":"Is there backlit in this laptop",
+                "answers":[
+                    {
+                        "content":"NO",
+                        "answeredBy":"KINGSCOMPUTERS",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"0",
+                        "numberOfDislikes":"0"
+                    }
+                ]
+            },
+            {
+                "question":"Back light is here on this laptop",
+                "answers":[
+                    {
+                        "content":"No",
+                        "answeredBy":"KINGSCOMPUTERS",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"13",
+                        "numberOfDislikes":"3"
+                    }
+                ]
+            },
+            {
+                "question":"It has cooling fan",
+                "answers":[
+                    {
+                        "content":"Yes",
+                        "answeredBy":"KINGSCOMPUTERS",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"3",
+                        "numberOfDislikes":"0"
+                    }
+                ]
+            },
+            {
+                "question":"Can I play roblox on it",
+                "answers":[
+                    {
+                        "content":"YES",
+                        "answeredBy":"KINGSCOMPUTERS",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"2",
+                        "numberOfDislikes":"2"
+                    }
+                ]
+            },
+            {
+                "question":"I CAN PLAY games like GTA, free fire, PUBG,",
+                "answers":[
+                    {
+                        "content":"No",
+                        "answeredBy":"MaxInfo",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"1",
+                        "numberOfDislikes":"2"
+                    }
+                ]
+            },
+            {
+                "question":"Can I play free fire",
+                "answers":[
+                    {
+                        "content":"YES",
+                        "answeredBy":"KINGSCOMPUTERS",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"5",
+                        "numberOfDislikes":"4"
+                    }
+                ]
+            },
+            {
+                "question":"Battery backup kitna hai",
+                "answers":[
+                    {
+                        "content":"Nothing it's very bad product",
+                        "answeredBy":"Anonymous",
+                        "answererRole":"Certified Buyer",
+                        "numberOfLikes":"7",
+                        "numberOfDislikes":"10"
+                    }
+                ]
+            },
+            {
+                "question":"Can i edit vedios",
+                "answers":[
+                    {
+                        "content":"no",
+                        "answeredBy":"NiceLaptops",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"1",
+                        "numberOfDislikes":"3"
+                    }
+                ]
+            },
+            {
+                "question":"Can I play Minecraft java",
+                "answers":[
+                    {
+                        "content":"Yes",
+                        "answeredBy":"Anonymous",
+                        "answererRole":"Certified Buyer",
+                        "numberOfLikes":"0",
+                        "numberOfDislikes":"0"
+                    }
+                ]
+            },
+            {
+                "question":"Can you get with bag",
+                "answers":[
+                    {
+                        "content":"No",
+                        "answeredBy":"shyam sunder",
+                        "answererRole":"Certified Buyer",
+                        "numberOfLikes":"0",
+                        "numberOfDislikes":"1"
+                    }
+                ]
+            },
+            {
+                "question":"Fingerprint sensor reading",
+                "answers":[
+                    {
+                        "content":"No",
+                        "answeredBy":"KINGSCOMPUTERS",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"2",
+                        "numberOfDislikes":"1"
+                    }
+                ]
+            },
+            {
+                "question":"Is it appropriate for job use?",
+                "answers":[
+                    {
+                        "content":"Yes",
+                        "answeredBy":"KINGSCOMPUTERS",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"0",
+                        "numberOfDislikes":"0"
+                    }
+                ]
+            },
+            {
+                "question":"Size of keyboard?",
+                "answers":[
+                    {
+                        "content":"(15.6 inch)",
+                        "answeredBy":"KINGSCOMPUTERS",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"1",
+                        "numberOfDislikes":"0"
+                    }
+                ]
+            },
+            {
+                "question":"Can we perform graphic designing softwares",
+                "answers":[
+                    {
+                        "content":"YES",
+                        "answeredBy":"KINGSCOMPUTERS",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"1",
+                        "numberOfDislikes":"0"
+                    }
+                ]
+            },
+            {
+                "question":"How many GB of graphics memory..?",
+                "answers":[
+                    {
+                        "content":"Its not a gamming laptop no graphics card available",
+                        "answeredBy":"MaxInfo",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"0",
+                        "numberOfDislikes":"1"
+                    }
+                ]
+            },
+            {
+                "question":"Kitne time ka backup dega",
+                "answers":[
+                    {
+                        "content":"6 HOURS",
+                        "answeredBy":"KINGSCOMPUTERS",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"1",
+                        "numberOfDislikes":"0"
+                    }
+                ]
+            },
+            {
+                "question":"Is there sim slot",
+                "answers":[
+                    {
+                        "content":"No",
+                        "answeredBy":"MaxInfo",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"0",
+                        "numberOfDislikes":"1"
+                    }
+                ]
+            },
+            {
+                "question":"Can I play some normal games in laptop",
+                "answers":[
+                    {
+                        "content":"Yes",
+                        "answeredBy":"MaxInfo",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"0",
+                        "numberOfDislikes":"0"
+                    }
+                ]
+            },
+            {
+                "question":"Is RAM upgradable and can be increased to 32GB",
+                "answers":[
+                    {
+                        "content":"Yes",
+                        "answeredBy":"MaxInfo",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"1",
+                        "numberOfDislikes":"0"
+                    }
+                ]
+            },
+            {
+                "question":"Will you give charger??",
+                "answers":[
+                    {
+                        "content":"Yes it comes with charger",
+                        "answeredBy":"MaxInfo",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"0",
+                        "numberOfDislikes":"0"
+                    }
+                ]
+            },
+            {
+                "question":"Their was low games are run",
+                "answers":[
+                    {
+                        "content":"Not for games",
+                        "answeredBy":"MaxInfo",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"0",
+                        "numberOfDislikes":"0"
+                    }
+                ]
+            },
+            {
+                "question":"Type C charging support or not?",
+                "answers":[
+                    {
+                        "content":"No",
+                        "answeredBy":"MaxInfo",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"0",
+                        "numberOfDislikes":"0"
+                    }
+                ]
+            },
+            {
+                "question":"Wifi connection available",
+                "answers":[
+                    {
+                        "content":"yes",
+                        "answeredBy":"KINGSCOMPUTERS",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"0",
+                        "numberOfDislikes":"0"
+                    }
+                ]
+            },
+            {
+                "question":"Ethernet port available or not?",
+                "answers":[
+                    {
+                        "content":"YES Ethernet port IS available",
+                        "answeredBy":"KINGSCOMPUTERS",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"0",
+                        "numberOfDislikes":"0"
+                    }
+                ]
+            },
+            {
+                "question":"It's suitable for programming",
+                "answers":[
+                    {
+                        "content":"YES",
+                        "answeredBy":"KINGSCOMPUTERS",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"1",
+                        "numberOfDislikes":"0"
+                    }
+                ]
+            },
+            {
+                "question":"Sir can I use python or Java or c language in this system",
+                "answers":[
+                    {
+                        "content":"YES YOU CAN USE IT",
+                        "answeredBy":"KINGSCOMPUTERS",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"1",
+                        "numberOfDislikes":"0"
+                    }
+                ]
+            },
+            {
+                "question":"Is it with ms office",
+                "answers":[
+                    {
+                        "content":"no you can download",
+                        "answeredBy":"KINGSCOMPUTERS",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"0",
+                        "numberOfDislikes":"0"
+                    }
+                ]
+            },
+            {
+                "question":"Can I stream from this laptop?",
+                "answers":[
+                    {
+                        "content":"No",
+                        "answeredBy":"MaxInfo",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"0",
+                        "numberOfDislikes":"0"
+                    }
+                ]
+            },
+            {
+                "question":"Is there is type c port?",
+                "answers":[
+                    {
+                        "content":"No",
+                        "answeredBy":"MaxInfo",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"0",
+                        "numberOfDislikes":"0"
+                    }
+                ]
+            },
+            {
+                "question":"Ms office provide",
+                "answers":[
+                    {
+                        "content":"no you can installed",
+                        "answeredBy":"KINGSCOMPUTERS",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"0",
+                        "numberOfDislikes":"0"
+                    }
+                ]
+            },
+            {
+                "question":"Can I install ms office",
+                "answers":[
+                    {
+                        "content":"YES",
+                        "answeredBy":"KINGSCOMPUTERS",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"1",
+                        "numberOfDislikes":"0"
+                    }
+                ]
+            },
+            {
+                "question":"Keyboard light available?",
+                "answers":[
+                    {
+                        "content":"no",
+                        "answeredBy":"KINGSCOMPUTERS",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"1",
+                        "numberOfDislikes":"0"
+                    }
+                ]
+            },
+            {
+                "question":"This is good for.?What purpose",
+                "answers":[
+                    {
+                        "content":"multimedia USE",
+                        "answeredBy":"KINGSCOMPUTERS",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"1",
+                        "numberOfDislikes":"0"
+                    }
+                ]
+            },
+            {
+                "question":"Can I create animation on this laptop ??",
+                "answers":[
+                    {
+                        "content":"yes",
+                        "answeredBy":"KINGSCOMPUTERS",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"0",
+                        "numberOfDislikes":"0"
+                    }
+                ]
+            },
+            {
+                "question":"Is MS Office available preinstalled ?",
+                "answers":[
+                    {
+                        "content":"NO",
+                        "answeredBy":"MaxInfo",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"2",
+                        "numberOfDislikes":"4"
+                    }
+                ]
+            },
+            {
+                "question":"Is Ms office installed",
+                "answers":[
+                    {
+                        "content":"no you can installed",
+                        "answeredBy":"KINGSCOMPUTERS",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"0",
+                        "numberOfDislikes":"0"
+                    }
+                ]
+            },
+            {
+                "question":"Is it good for coding",
+                "answers":[
+                    {
+                        "content":"yes",
+                        "answeredBy":"KINGSCOMPUTERS",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"0",
+                        "numberOfDislikes":"0"
+                    }
+                ]
+            },
+            {
+                "question":"Can we play GTA 5 on this laptop what graphic",
+                "answers":[
+                    {
+                        "content":"YES AND integrated Graphic",
+                        "answeredBy":"KINGSCOMPUTERS",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"0",
+                        "numberOfDislikes":"0"
+                    }
+                ]
+            },
+            {
+                "question":"Can we add ssd and ram",
+                "answers":[
+                    {
+                        "content":"YES",
+                        "answeredBy":"KINGSCOMPUTERS",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"0",
+                        "numberOfDislikes":"0"
+                    }
+                ]
+            },
+            {
+                "question":"Upgradable storage or not",
+                "answers":[
+                    {
+                        "content":"yes upgradable you can",
+                        "answeredBy":"KINGSCOMPUTERS",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"0",
+                        "numberOfDislikes":"0"
+                    }
+                ]
+            },
+            {
+                "question":"It is support both hdd ans ssd",
+                "answers":[
+                    {
+                        "content":"NO",
+                        "answeredBy":"KINGSCOMPUTERS",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"0",
+                        "numberOfDislikes":"0"
+                    }
+                ]
+            },
+            {
+                "question":"Is MS Office installed?",
+                "answers":[
+                    {
+                        "content":"no you can installed",
+                        "answeredBy":"KINGSCOMPUTERS",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"0",
+                        "numberOfDislikes":"0"
+                    }
+                ]
+            },
+            {
+                "question":"Graphic how much",
+                "answers":[
+                    {
+                        "content":"integrated graphics",
+                        "answeredBy":"KINGSCOMPUTERS",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"0",
+                        "numberOfDislikes":"0"
+                    }
+                ]
+            },
+            {
+                "question":"is it available with both hdd 512 and SSD 512???",
+                "answers":[
+                    {
+                        "content":"YES",
+                        "answeredBy":"KINGSCOMPUTERS",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"0",
+                        "numberOfDislikes":"0"
+                    }
+                ]
+            },
+            {
+                "question":"There is how many core",
+                "answers":[
+                    {
+                        "content":"Dual Core",
+                        "answeredBy":"KINGSCOMPUTERS",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"0",
+                        "numberOfDislikes":"0"
+                    }
+                ]
+            },
+            {
+                "question":"Is graphic card dedicated",
+                "answers":[
+                    {
+                        "content":"NO",
+                        "answeredBy":"KINGSCOMPUTERS",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"0",
+                        "numberOfDislikes":"0"
+                    }
+                ]
+            },
+            {
+                "question":"Can we use it for Autocad and revit software?",
+                "answers":[
+                    {
+                        "content":"YES",
+                        "answeredBy":"KINGSCOMPUTERS",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"0",
+                        "numberOfDislikes":"1"
+                    }
+                ]
+            },
+            {
+                "question":"Can i play gta v in it",
+                "answers":[
+                    {
+                        "content":"yes",
+                        "answeredBy":"KINGSCOMPUTERS",
+                        "answererRole":"Flipkart Seller",
+                        "numberOfLikes":"1",
+                        "numberOfDislikes":"0"
+                    }
+                ]
+            },
+            {
+                "question":"If it has keyboard light?",
                 "answers":[
                     {
                         "content":"NO",

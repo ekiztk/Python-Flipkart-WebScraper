@@ -21,7 +21,7 @@ Flipkart website scraper for 2024.
 <ul>
   <li>Webdriver-manager</li>
   
-     0 pip install webdriver-manager
+      pip install webdriver-manager
 </ul>
 
 <h2>Products:</h2>

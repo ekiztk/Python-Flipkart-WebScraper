@@ -8,7 +8,7 @@ from classes.WebDriverThread import WebDriverThread
 from helper_functions.get_laptop_customer_questions import get_laptop_customer_questions
 from helper_functions.get_laptop_ratings import get_laptop_ratings
 from helper_functions.get_laptop_reviews import get_laptop_reviews, get_reviews_on_a_page
-from helper_functions.write_array_to_json import write_array_to_json
+from helper_functions.write_laptop_array_to_json import write_laptop_array_to_json
 from classes.laptop import Laptop
 
 driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install())) 
@@ -28,14 +28,14 @@ for a in all_laptop_a:
     all_laptop_urls.append("https://www.flipkart.com" + a['href'])
 
 df = pd.DataFrame({'Product Url': all_laptop_urls}) 
-df.to_csv('laptop_urls.csv', index=False, encoding='utf-8')
+df.to_csv('laptops/laptop_urls.csv', index=False, encoding='utf-8')
 print("Finished Getting All Laptop Urls")
 
 # Getting Each Laptop Detail
 
 # Get the file ready
 laptop_array = []
-file_to_save_laptop_details = "laptop_details.json"
+file_to_save_laptop_details = "laptops/laptop_details.json"
 if os.path.exists(file_to_save_laptop_details):
   os.remove(file_to_save_laptop_details)
 
@@ -131,5 +131,5 @@ for url in ["https://www.flipkart.com/hp-255g9-amd-ryzen-3-dual-core-ryzen3-3250
 driver.quit()
 
 print("Started Writing Laptops To File")
-write_array_to_json(laptop_array, file_to_save_laptop_details)
+write_laptop_array_to_json(laptop_array, file_to_save_laptop_details)
 print("Finished Writing Laptops To File")

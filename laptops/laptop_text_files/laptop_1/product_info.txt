@@ -1,0 +1,31 @@
+Product Name: HP 255 G9 AMD Ryzen 3 Dual Core AMD Ryzen3 3250 - (8 GB/512 GB SSD/Windows 11 Home) 255 G8 Notebook Notebook  (15.6 inch, Dark Ash, 1.78 kg)
+Description: HP 255 G8  62Y23PA (AMD Ryzen 3-3250U/ 8GB Ram/ 512 Gb SSD / 39.62 cm (15.6 inch) HD/Windows 11/AMD Radeon Vega 8 Graphics/ Dark Ash Silver/1.74Kg 1 Year Warranty
+Highlights:
+- 15.6 inch FHD SVA anti-glare WLED-backlit
+- Light Laptop without Optical Disk Drive
+
+General Information:
+- General
+  Sales Package: Laptop 1 ; Adapter 1 ; Power Cable 1
+  Model Number: 255 G8 Notebook
+  Part Number: 62y23pa
+
+- Processor And Memory Features
+  Processor Brand: AMD
+  Processor Name: Ryzen 3 Dual Core
+  SSD: Yes
+  SSD Capacity: 512 GB
+
+- Operating System
+  OS Architecture: 64 bit
+  Operating System: Windows 11 Home
+  Supported Operating System: Windows, Linux
+  System Architecture: 64 bit
+
+Overall Ratings:
+- Overall: 4.2
+- Performance: 4.0
+- Battery: 3.8
+- Design: 4.2
+- Display: 3.8
+- Value for Money: 4.0

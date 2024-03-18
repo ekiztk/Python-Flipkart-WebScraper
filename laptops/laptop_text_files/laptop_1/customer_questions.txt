@@ -1,0 +1,10 @@
+Question: Is this with md office
+Answer: NO
+Likes: 15
+Dislikes: 7
+
+Question: Can I use AutoCAD software?
+Answer: Yes
+Likes: 4
+Dislikes: 2
+

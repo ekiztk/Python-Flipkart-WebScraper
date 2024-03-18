@@ -1,0 +1,12 @@
+Title: Useless product
+Content: Issues coming after 15 days only regarding software
+Rating: 1
+Likes: 26
+Dislikes: 6
+
+Title: Delightful
+Content: Very useful product.
+Rating: 4
+Likes: 56
+Dislikes: 19
+
