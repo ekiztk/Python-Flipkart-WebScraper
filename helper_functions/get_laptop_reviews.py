@@ -4,6 +4,7 @@ from selenium.webdriver.chrome.service import Service as ChromeService
 from bs4 import BeautifulSoup
 from time import sleep
 from selenium.webdriver.common.by import By
+import constants.laptop_constants as constants
 
 def get_laptop_reviews(url):
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install())) 
@@ -17,7 +18,7 @@ def get_laptop_reviews(url):
     # get first page reviews
     get_reviews_on_a_page(url,driver,reviews)
 
-    page_numbers_div = soup.find('div', attrs={'class':'_2MImiq _1Qnn1K'})
+    page_numbers_div = soup.find('div', attrs={'class': constants.REVIEW_PAGE_NUMBERS_DIV})
     if page_numbers_div:
         page_count = int(page_numbers_div.contents[0].text.split(" ")[-1].strip()) 
         current_page_number = 2
@@ -30,10 +31,10 @@ def get_laptop_reviews(url):
     driver.quit()
     return reviews
 
-def get_reviews_on_a_page(url, webDriver, reviewArr, review_div_class ='col _2wzgFH K0kLPL'):
+def get_reviews_on_a_page(url, webDriver, reviewArr, review_div_class = constants.REVIEW_PAGE_A_REVIEW_DIV):
     webDriver.get(url)
     # make hidden contents visible
-    hidden_content_span_arr = webDriver.find_elements(By.CLASS_NAME,"_1BWGvX")
+    hidden_content_span_arr = webDriver.find_elements(By.CLASS_NAME, constants.HIDDEN_CONTENT_SPAN)
     for span in hidden_content_span_arr:
         span.click()
 

@@ -24,6 +24,11 @@ Flipkart website scraper for 2024.
       pip install webdriver-manager
 </ul>
 
+<h2>To run:</h2>
+<ul>
+    py flipkart_laptop_web_scraper 
+</ul>
+
 <h2>Products:</h2>
     <h3>1. Laptops:</h3>
         <ul>

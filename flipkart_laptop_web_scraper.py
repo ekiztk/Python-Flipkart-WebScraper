@@ -5,11 +5,13 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import os
 from classes.WebDriverThread import WebDriverThread
+
+from classes.laptop import Laptop
 from helper_functions.get_laptop_customer_questions import get_laptop_customer_questions
 from helper_functions.get_laptop_ratings import get_laptop_ratings
 from helper_functions.get_laptop_reviews import get_laptop_reviews, get_reviews_on_a_page
 from helper_functions.write_laptop_array_to_json import write_laptop_array_to_json
-from classes.laptop import Laptop
+import constants.laptop_constants as constants
 
 driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install())) 
 driver.implicitly_wait(5)
@@ -21,7 +23,7 @@ soup = BeautifulSoup(content, "html.parser")
 
 # Getting URLS (sadece bir sayfayı alıyor)
 print("Started Getting All Laptop Urls")
-all_laptop_a = soup.findAll('a', href=True, attrs={'class':'_1fQZEK'},limit=1)
+all_laptop_a = soup.findAll('a', href=True, attrs={'class': constants.ALL_LAPTOPS_A },limit=1)
 all_laptop_urls = []
 
 for a in all_laptop_a:
@@ -48,20 +50,20 @@ for url in ["https://www.flipkart.com/hp-255g9-amd-ryzen-3-dual-core-ryzen3-3250
     soup = BeautifulSoup(content, "html.parser")
 
     # Get name and highlights
-    name = soup.find('span', attrs={'class':'B_NuCI'}).string
-    highlights_li_arr = soup.find_all('li', attrs={'class':'_21Ahn-'})
+    name = soup.find('span', attrs={'class': constants.NAME_SPAN}).string
+    highlights_li_arr = soup.find_all('li', attrs={'class': constants.HIGHLIGHTS_LI})
     highlights = []
     for li in highlights_li_arr:
         highlights.append(li.string)
 
     # Get description
-    description_div = soup.find('div', attrs={'class':'_1mXcCf RmoJUa'})
+    description_div = soup.find('div', attrs={'class': constants.DESCRIPTION_DIV})
     description = ""
     if description_div:
         description = description_div.contents[0].text
 
     # Get features (optional)
-    features_div_arr =  soup.find_all('div', attrs={'class':'_3qWObK'})
+    features_div_arr =  soup.find_all('div', attrs={'class': constants.FEATURE_TITLE_DIV})
     features= []
     if features_div_arr:
         for div in features_div_arr:
@@ -70,7 +72,7 @@ for url in ["https://www.flipkart.com/hp-255g9-amd-ryzen-3-dual-core-ryzen3-3250
             features.append(f)
 
     # Get specifications
-    specifications_parent_div = soup.find('div', attrs={'class':'_1UhVsV'})
+    specifications_parent_div = soup.find('div', attrs={'class': constants.SPECIFICATIONS_PARENT_DIV})
     specifications = []
     for specification_div in specifications_parent_div.contents:
         category = specification_div.contents[0].string
@@ -87,8 +89,8 @@ for url in ["https://www.flipkart.com/hp-255g9-amd-ryzen-3-dual-core-ryzen3-3250
     
     # Get ratings
     ratings = []
-    all_reviews_div = soup.find('div', attrs={'class':'_3UAT2v _16PBlm'})
-    ratings_div = soup.find('div', class_='_2e3Uck')
+    all_reviews_div = soup.find('div', attrs={'class': constants.REVIEW_COUNT_DIV})
+    ratings_div = soup.find('div', class_= constants.RATINGS_DIV)
     #if review count is greater than three then go to reviews page
     if all_reviews_div:
         rating_url = "https://www.flipkart.com" + all_reviews_div.parent.get('href')
@@ -102,7 +104,7 @@ for url in ["https://www.flipkart.com/hp-255g9-amd-ryzen-3-dual-core-ryzen3-3250
 
     # Get reviews
     reviews = []
-    review_div_arr = soup.find_all('div', class_='col _2wzgFH')
+    review_div_arr = soup.find_all('div', class_= constants.A_REVIEW_DIV)
     #if review count is greater than three then go to reviews page
     if all_reviews_div:
         reviews_thread = WebDriverThread(target=get_laptop_reviews, args=(rating_url,))
@@ -110,11 +112,11 @@ for url in ["https://www.flipkart.com/hp-255g9-amd-ryzen-3-dual-core-ryzen3-3250
         reviews = reviews_thread.join()
     #if review count is less than three then get ratings from the current page
     elif review_div_arr:
-        get_reviews_on_a_page(url,driver,reviews,"col _2wzgFH")
+        get_reviews_on_a_page(url,driver,reviews, constants.A_REVIEW_DIV)
 
     # Get customer questions
     customer_questions = []
-    questions_answers_title_div = soup.find('div', attrs={'class':'_2n4XY2 _1d7nTU col'})
+    questions_answers_title_div = soup.find('div', attrs={'class': constants.QUESTIONS_ANSWERS_TITLE_DIV})
     # check if Questions and Answers exits
     if questions_answers_title_div:
         questions_thread = WebDriverThread(target=get_laptop_customer_questions, args=(url,))
