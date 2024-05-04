@@ -26,8 +26,8 @@ def get_laptop_customer_questions(url):
         content = driver.page_source
         soup = BeautifulSoup(content, "html.parser")
 
-        load_more_a = driver.find_element(By.CLASS_NAME, constants.LOAD_MORE_A)
         try:
+            load_more_a = driver.find_element(By.CLASS_NAME, constants.LOAD_MORE_A)
             while load_more_a is not None:
                 load_more_a.click()
                 sleep(1)

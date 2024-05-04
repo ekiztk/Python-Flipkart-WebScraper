@@ -1,0 +1,72 @@
+Title: Classy product
+Content: Super Product
+Rating: 5
+Likes: 23
+Dislikes: 1
+
+Title: Classy product
+Content: I am a computer enthusiast and knew exactly what i was buying. I have recently bought a high end Acer predator gaming laptop and was looking to buy a tablet for portable computing and watching lectures and reading research papers. Also a bit of coding. Suddenly I saw chromebooks as an option considering they are avilable for half the price of any decent tablet. There were a lot of negative reviews about chromebooks in general that they are just big android phones. people who buy these expecting to work as a full fleged computer will be disappointed for sure. But for basic computing tasks it is excellent. And the best thing i liked about this chromebook is its battery life. On my use cases of watching videos, working in google colab and reading papers it is actually lasting for close to 12 hours which is apple macbook territory but at a much lesser price. Also there is support for linux apps which opens up a lot of possibilities. got it for 15750.00. Another benefit is that it is fanless hence makes no noise. The system is snappy with 8 gb of ram and 128 gb SSD. The celeron CPU might be very slow for windows for works well for ChromeOS. My 2018 AMD ryzen laptop sometimes feels slower than this. But again I have a high end laptop for most of heavy duty tasks so the chomrebook serves well as a portable alternative for lighweight tasks.
+Rating: 5
+Likes: 33
+Dislikes: 15
+
+Title: Just okay
+Content: Chrome OS is worst in terms of Document editing tasks as  everything needs to be done online through Google Docs, Slides or Sheets... Many useful android apps are not optimised for this OS...MS Office (android version) can not be found and downloaded from the Google play store. Overall the Chromebook is only good for multimedia consumption. Tabs are much better than these so-called Chromebooks.
+Rating: 4
+Likes: 21
+Dislikes: 12
+
+Title: Terrific purchase
+Content: Very good
+Rating: 5
+Likes: 2
+Dislikes: 0
+
+Title: Brilliant
+Content: Very good product
+Rating: 5
+Likes: 2
+Dislikes: 1
+
+Title: Could be way better
+Content: Chrome os is not good not supporting Any software
+Rating: 2
+Likes: 2
+Dislikes: 0
+
+Title: Classy product
+Content: Good
+Rating: 5
+Likes: 0
+Dislikes: 0
+
+Title: Fabulous!
+Content: Good for light usage
+Rating: 5
+Likes: 0
+Dislikes: 0
+
+Title: Worth every penny
+Content: This product is very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very most important products
+Rating: 5
+Likes: 0
+Dislikes: 1
+
+Title: Wonderful
+Content: Nice
+Rating: 5
+Likes: 0
+Dislikes: 0
+
+Title: Expected a better product
+Content: Waste of money
+Rating: 2
+Likes: 2
+Dislikes: 1
+
+Title: Very poor
+Content: Over heating worsted products
+Rating: 1
+Likes: 5
+Dislikes: 3
+

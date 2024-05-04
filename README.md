@@ -2,6 +2,21 @@
 Flipkart website scraper for 2024.
 <h3>İf you like it please give it a ⭐.</h3>
 
+<h2>Configure:</h2>
+<ul>
+    Set LAPTOP_LIMIT variable in flipkart_laptop_web_scraper.py
+</ul>
+
+<h2>To run:</h2>
+<ul>
+    py flipkart_laptop_web_scraper.py 
+</ul>
+
+<h2>To convert the json array into text files:</h2>
+<ul>
+    py convert_a_laptop_to_text_file.py
+</ul>
+
 <h2>Required Python Libraries:</h2>
 <ul>
   <li>BeautifulSoup</li>
@@ -22,11 +37,6 @@ Flipkart website scraper for 2024.
   <li>Webdriver-manager</li>
   
       pip install webdriver-manager
-</ul>
-
-<h2>To run:</h2>
-<ul>
-    py flipkart_laptop_web_scraper 
 </ul>
 
 <h2>Products:</h2>

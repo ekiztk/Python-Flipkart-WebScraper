@@ -21,9 +21,12 @@ driver.get("https://www.flipkart.com/laptops/pr?sid=6bo,b5g&marketplace=FLIPKART
 content = driver.page_source
 soup = BeautifulSoup(content, "html.parser")
 
+#Laptop count to be scraped
+LAPTOP_COUNT=5
+
 # Getting URLS (sadece bir sayfayı alıyor)
 print("Started Getting All Laptop Urls")
-all_laptop_a = soup.findAll('a', href=True, attrs={'class': constants.ALL_LAPTOPS_A },limit=1)
+all_laptop_a = soup.findAll('a', href=True, attrs={'class': constants.ALL_LAPTOPS_A }, limit=LAPTOP_COUNT)
 all_laptop_urls = []
 
 for a in all_laptop_a:
@@ -44,7 +47,7 @@ if os.path.exists(file_to_save_laptop_details):
 f = open(file_to_save_laptop_details, "x")
 
 # Laptops that will be being scrapped
-for url in ["https://www.flipkart.com/hp-255g9-amd-ryzen-3-dual-core-ryzen3-3250-8-gb-512-gb-ssd-windows-11-home-255-g8-notebook/p/itm77dde4dbe727e?pid=COMGFBK9A3Z2QD9H&lid=LSTCOMGFBK9A3Z2QD9HP2ST2L&marketplace=FLIPKART&fm=organic&iid=9cfa78d4-1307-46c0-8046-13de8d2e096b.COMGFBK9A3Z2QD9H.PRODUCTSUMMARY&ppt=pp&ppn=pp&ssid=bt5pv8zats0000001709727566595"]:
+for url in all_laptop_urls:
     driver.get(url)
     content = driver.page_source
     soup = BeautifulSoup(content, "html.parser")

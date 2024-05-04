@@ -1,0 +1,50 @@
+Question: Is it good for trading ?
+Answer: No
+Likes: 8
+Dislikes: 0
+
+Question: Can I install games
+Answer: Yes you can install games available on playstore
+Likes: 0
+Dislikes: 0
+
+Question: Can I window 11 install?
+Answer: No. It is a chrome book. It comes with Chrome OS.
+Likes: 10
+Dislikes: 0
+
+Question: Micro SD card slot is available? Plz confirm
+Answer: yes, it's available.
+Likes: 4
+Dislikes: 1
+
+Question: Can we extend the memory with the Memory card?  Micro SD card slot available?
+Answer: Yes, there is a slot for memory card, because it's Android laptop not window.
+Likes: 2
+Dislikes: 1
+
+Question: This is laptop
+Answer: A laptop is a portable personal computer
+Likes: 0
+Dislikes: 0
+
+Question: Is it touchscreen
+Answer: No
+Likes: 0
+Dislikes: 0
+
+Question: Is window support
+Answer: No, it's Android laptop.
+Likes: 0
+Dislikes: 1
+
+Question: do this has expandable storage or not???
+Answer: you can use memory card, because it's Android laptop not window.
+Likes: 0
+Dislikes: 0
+
+Question: Can i install windows?
+Answer: No this for only Android..
+Likes: 0
+Dislikes: 0
+

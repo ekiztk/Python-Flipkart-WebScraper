@@ -1,0 +1,69 @@
+Product Name: Acer Intel Celeron Dual Core N4500 - (8 GB/128 GB EMMC Storage/Chrome OS) CB314-3H-C5QE Chromebook  (14 inch, Silver, 1.45 Kg)
+Description: 
+Highlights:
+- 14 inch HD LED-backlit TFT LCD
+- Light Laptop without Optical Disk Drive
+
+General Information:
+- General
+  Sales Package: Laptop, Power Adaptor, User Guide, Warranty Documents
+  Model Number: CB314-3H-C5QE
+  Part Number: NX.K04SI.007
+  Model Name: CB314-3H
+  Color: Silver
+  Type: Chromebook
+  Suitable For: Processing & Multitasking
+  MS Office Provided: No
+
+- Processor And Memory Features
+  Processor Brand: Intel
+  Processor Name: Celeron Dual Core
+  SSD: No
+  RAM: 8 GB
+  RAM Type: LPDDR4X
+  EMMC Storage Capacity: 128 GB
+  Processor Variant: N4500
+  Clock Speed: 1.10 GHz with Max Turbo Boost Frequency Up to 2.80 GHz
+  Graphic Processor: Intel Integrated UHD
+
+- Operating System
+  Operating System: Chrome
+
+- Port And Slot Features
+  USB Port: 2 x USB 3.2 Gen 1 Type-C port, 2 x USB 3.2 Gen 1 Type-A port
+
+- Display And Audio Features
+  Touchscreen: No
+  Screen Size: 35.56 cm (14 inch)
+  Screen Resolution: 1920 X 1080 Pixel
+  Screen Type: HD LED-backlit TFT LCD
+  Speakers: Yes
+  Internal Mic: Yes
+
+- Connectivity Features
+  Wireless LAN: 802.11a/b/g/n/acR2+ax wireless LAN
+  Bluetooth: v5.1
+
+- Dimensions
+  Dimensions: 326.4 x 225 x 20 mm
+  Weight: 1.45 Kg
+
+- Additional Features
+  Disk Drive: Not Available
+  Web Camera: UFC with Narrow USB HD camera, Compatible with Chromebook, 1280 x 720 resolution, 720p HD video at 30 fps with Temporal Noise Reduction
+  Keyboard: 74-/75-/78-key Acer FineTip keyboard with international language support
+  Backlit Keyboard: No
+
+- Warranty
+  Warranty Summary: 1 Year Onsite Warranty
+  Warranty Service Type: Onsite
+  Covered in Warranty: Manufacturing Defects
+  Not Covered in Warranty: Physical damage
+
+Overall Ratings:
+- Overall: 3.9
+- Performance: 3.6
+- Battery: 3.8
+- Design: 3.9
+- Display: 4.0
+- Value for Money: 3.9

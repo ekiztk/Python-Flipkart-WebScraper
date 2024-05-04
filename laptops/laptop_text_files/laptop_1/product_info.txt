@@ -1,31 +1,74 @@
-Product Name: HP 255 G9 AMD Ryzen 3 Dual Core AMD Ryzen3 3250 - (8 GB/512 GB SSD/Windows 11 Home) 255 G8 Notebook Notebook  (15.6 inch, Dark Ash, 1.78 kg)
-Description: HP 255 G8  62Y23PA (AMD Ryzen 3-3250U/ 8GB Ram/ 512 Gb SSD / 39.62 cm (15.6 inch) HD/Windows 11/AMD Radeon Vega 8 Graphics/ Dark Ash Silver/1.74Kg 1 Year Warranty
+Product Name: HP Victus Intel Core i5 12th Gen 12450H - (16 GB/512 GB SSD/Windows 11 Home/4 GB Graphics/NVIDIA GeForce RTX 2050) 15-fa1099TX Gaming Laptop  (15.6 inch, Mica Silver, 2.37 Kg, With MS Office)
+Description: 
 Highlights:
-- 15.6 inch FHD SVA anti-glare WLED-backlit
+- 15.6 inch Full HD, 144 Hz, 9 ms response time, IPS, micro-edge, anti-glare, Brightness 250 nits, 141 ppi, Color Gamut 45% NTSC
 - Light Laptop without Optical Disk Drive
+- Preloaded with MS Office
 
 General Information:
 - General
-  Sales Package: Laptop 1 ; Adapter 1 ; Power Cable 1
-  Model Number: 255 G8 Notebook
-  Part Number: 62y23pa
+  Sales Package: Laptop, Power Adaptor, User Guide, Warranty Documents
+  Model Number: 15-fa1099TX
+  Part Number: 8P9Q3PA#ACJ
+  Model Name: 15-fa1099TX
+  Series: Victus
+  Color: Mica Silver
+  Type: Gaming Laptop
+  Suitable For: Gaming
+  MS Office Provided: Yes
 
 - Processor And Memory Features
-  Processor Brand: AMD
-  Processor Name: Ryzen 3 Dual Core
+  Dedicated Graphic Memory Type: GDDR6
+  Dedicated Graphic Memory Capacity: 4 GB
+  Processor Brand: Intel
+  Processor Name: Core i5
+  Processor Generation: 12th Gen
   SSD: Yes
   SSD Capacity: 512 GB
+  RAM: 16 GB
+  RAM Type: DDR4
+  Processor Variant: 12450H
+  Clock Speed: Max Frequency Up to 4.4 GHz
+  Graphic Processor: NVIDIA GeForce RTX 2050
 
 - Operating System
-  OS Architecture: 64 bit
   Operating System: Windows 11 Home
-  Supported Operating System: Windows, Linux
-  System Architecture: 64 bit
+
+- Port And Slot Features
+  USB Port: 1 x USB Type-A 5 Gbps signaling rate, 1 x USB Type-A 5Gbps signaling rate
+  HDMI Port: 1 x HDMI 2.1
+
+- Display And Audio Features
+  Touchscreen: No
+  Screen Size: 39.62 cm (15.6 inch)
+  Screen Resolution: 1920 x 1080 Pixel
+  Screen Type: Full HD, 144 Hz, 9 ms response time, IPS, micro-edge, anti-glare, Brightness 250 nits, 141 ppi, Color Gamut 45% NTSC
+  Speakers: Yes
+  Internal Mic: Yes
+
+- Connectivity Features
+  Wireless LAN: Intel Wi-Fi 6E AX211 (2x2)
+  Bluetooth: v5.3
+
+- Dimensions
+  Dimensions: 357.9 x 239.7 x 22.5 mm
+  Weight: 2.37 Kg
+
+- Additional Features
+  Disk Drive: Not Available
+  Web Camera: HP Wide Vision 720p HD camera
+  Keyboard: Keyboard & Pointing Device Full-size, 4-zone RGB backlit, shadow black keyboard
+
+- Warranty
+  Warranty Summary: 1 Year Onsite warranty
+  Warranty Service Type: Onsite
+  Covered in Warranty: Manufacturing Defects
+  Not Covered in Warranty: Physical Damage
 
 Overall Ratings:
 - Overall: 4.2
-- Performance: 4.0
-- Battery: 3.8
-- Design: 4.2
-- Display: 3.8
-- Value for Money: 4.0
+- Performance: 4.3
+- Battery: 3.2
+- Design: 4.3
+- Display: 4.3
+- Value for Money: 4.2

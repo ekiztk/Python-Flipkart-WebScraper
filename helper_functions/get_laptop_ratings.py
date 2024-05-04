@@ -23,7 +23,12 @@ def get_laptop_ratings(url):
         driver.get("https://www.flipkart.com" + a['href'])
         content = driver.page_source
         soup = BeautifulSoup(content, "html.parser")
-        ratings[rating_categories[index]] = soup.find('text', attrs={'class': constants.RATING_SCORE_TEXT}).string
+
+        rating_value_text = soup.find('text', attrs={'class': constants.RATING_SCORE_TEXT})
+        if rating_value_text:
+            ratings[rating_categories[index]] = soup.find('text', attrs={'class': constants.RATING_SCORE_TEXT}).string
+        else:
+            ratings[rating_categories[index]] = "-"
     
     driver.quit()
     return ratings

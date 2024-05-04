@@ -1,12 +1,60 @@
-Title: Useless product
-Content: Issues coming after 15 days only regarding software
-Rating: 1
-Likes: 26
-Dislikes: 6
-
-Title: Delightful
-Content: Very useful product.
+Title: Nice product
+Content: Performance is good but battery backup is not good.its drains fast
 Rating: 4
-Likes: 56
-Dislikes: 19
+Likes: 36
+Dislikes: 15
+
+Title: Really Nice
+Content: Good
+Rating: 4
+Likes: 14
+Dislikes: 8
+
+Title: Terrific purchase
+Content: It's the best laptop in this budget. Issue it has only 3 hours battery backup
+Rating: 5
+Likes: 6
+Dislikes: 3
+
+Title: Nice product
+Content: Battery less but 150wt charger...... Design look permance good
+Rating: 4
+Likes: 1
+Dislikes: 0
+
+Title: Value-for-money
+Content: Worth buying
+Rating: 4
+Likes: 1
+Dislikes: 0
+
+Title: Brilliant
+Content: The laptop looks great and beautiful. It has 16GB  RAM 1TB SSD with 4GB graphic card. Specifications are great. Overall a good buy. Got massive discount with credit card. Performance is just great.
+Rating: 5
+Likes: 10
+Dislikes: 15
+
+Title: Terrific purchase
+Content: The beast 🔥🔥
+Rating: 5
+Likes: 1
+Dislikes: 0
+
+Title: Awesome performance, battery backup can be improved.
+Content: Performance is good. battery back up while playing game, lasts around just 45 mins. Normal use lasts 1.5 hours.
+Rating: 4
+Likes: 1
+Dislikes: 1
+
+Title: Useless product
+Content: Such worst performance and bad experience of flipkart platform
+Rating: 1
+Likes: 0
+Dislikes: 0
+
+Title: Just wow!
+Content: Good product.
+Rating: 5
+Likes: 0
+Dislikes: 0
 
