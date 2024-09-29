@@ -45,7 +45,7 @@ while len(all_laptop_urls) < LAPTOP_COUNT:
 
 # Get the file ready
 laptop_array = []
-file_to_save_laptop_details = "laptops/laptop_details.json"
+file_to_save_laptop_details = "data/laptops/laptop_details.json"
 if os.path.exists(file_to_save_laptop_details):
   os.remove(file_to_save_laptop_details)
 
