@@ -6,7 +6,7 @@ from time import sleep
 from selenium.webdriver.common.by import By
 import constants.laptop_constants as constants
 
-def get_laptop_customer_questions(url):
+def get_laptop_customer_questions(url,max_question_size):
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install())) 
     driver.implicitly_wait(5)
     driver.get(url)
@@ -15,6 +15,7 @@ def get_laptop_customer_questions(url):
     
     all_questions_a = soup.find('a', attrs={'class': constants.ALL_QUESTIONS_A}) 
     customer_questions = []
+
     # check if questions are less than three
     if all_questions_a is None:
         questions_div_arr = soup.find_all('div', attrs={'class': constants.A_QUESTION_DIV})
@@ -37,7 +38,14 @@ def get_laptop_customer_questions(url):
 
         updatedSoup = BeautifulSoup(driver.page_source, "html.parser")
         questions_div_arr = updatedSoup.find_all('div', attrs={'class': constants.A_QUESTION_DIV})
+
+        item_count = 0
         for parent in questions_div_arr:
+            item_count = item_count + 1
+            if max_question_size:
+                if item_count > max_question_size:
+                    break
+
             customer_question = get_a_question_and_answers(parent)
             customer_questions.append(customer_question)
 

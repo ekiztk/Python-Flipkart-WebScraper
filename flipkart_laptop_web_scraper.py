@@ -1,3 +1,5 @@
+import json
+import time
 from webdriver_manager.chrome import ChromeDriverManager 
 from selenium import webdriver 
 from selenium.webdriver.chrome.service import Service as ChromeService
@@ -13,28 +15,31 @@ from helper_functions.get_laptop_reviews import get_laptop_reviews, get_reviews_
 from helper_functions.write_laptop_array_to_json import write_laptop_array_to_json
 import constants.laptop_constants as constants
 
-driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install())) 
+LAPTOP_COUNT = 10 
+CURR_PAGE_NUMBER = 1 
+
+driver = webdriver.Chrome()
 driver.implicitly_wait(5)
 
-driver.get("https://www.flipkart.com/laptops/pr?sid=6bo,b5g&marketplace=FLIPKART&otracker=product_breadCrumbs_Laptops")
-
-content = driver.page_source
-soup = BeautifulSoup(content, "html.parser")
-
-#Laptop count to be scraped
-LAPTOP_COUNT=5
-
-# Getting URLS (sadece bir sayfayı alıyor)
-print("Started Getting All Laptop Urls")
-all_laptop_a = soup.findAll('a', href=True, attrs={'class': constants.ALL_LAPTOPS_A }, limit=LAPTOP_COUNT)
 all_laptop_urls = []
 
-for a in all_laptop_a:
-    all_laptop_urls.append("https://www.flipkart.com" + a['href'])
+# Getting All Laptop Urls
+while len(all_laptop_urls) < LAPTOP_COUNT:
+    driver.get(f"https://www.flipkart.com/laptops/pr?sid=6bo,b5g&page={CURR_PAGE_NUMBER}")
+    content = driver.page_source
+    soup = BeautifulSoup(content, "html.parser")
 
-df = pd.DataFrame({'Product Url': all_laptop_urls}) 
-df.to_csv('laptops/laptop_urls.csv', index=False, encoding='utf-8')
-print("Finished Getting All Laptop Urls")
+    all_laptop_a = soup.findAll('a', href=True, attrs={'class': constants.ALL_LAPTOPS_A}, limit=(LAPTOP_COUNT - len(all_laptop_urls)))
+
+    # Linkleri listeye ekleme
+    for a in all_laptop_a:
+        all_laptop_urls.append("https://www.flipkart.com" + a['href'])
+    
+    if len(all_laptop_urls) >= LAPTOP_COUNT:
+        break
+
+    CURR_PAGE_NUMBER += 1
+    time.sleep(2) 
 
 # Getting Each Laptop Detail
 
@@ -63,7 +68,7 @@ for url in all_laptop_urls:
     description_div = soup.find('div', attrs={'class': constants.DESCRIPTION_DIV})
     description = ""
     if description_div:
-        description = description_div.contents[0].text
+        description = description_div.contents[0].contents[0].text
 
     # Get features (optional)
     features_div_arr =  soup.find_all('div', attrs={'class': constants.FEATURE_TITLE_DIV})
@@ -110,7 +115,7 @@ for url in all_laptop_urls:
     review_div_arr = soup.find_all('div', class_= constants.A_REVIEW_DIV)
     #if review count is greater than three then go to reviews page
     if all_reviews_div:
-        reviews_thread = WebDriverThread(target=get_laptop_reviews, args=(rating_url,))
+        reviews_thread = WebDriverThread(target=get_laptop_reviews, args=(rating_url,1))
         reviews_thread.start()
         reviews = reviews_thread.join()
     #if review count is less than three then get ratings from the current page
@@ -122,7 +127,7 @@ for url in all_laptop_urls:
     questions_answers_title_div = soup.find('div', attrs={'class': constants.QUESTIONS_ANSWERS_TITLE_DIV})
     # check if Questions and Answers exits
     if questions_answers_title_div:
-        questions_thread = WebDriverThread(target=get_laptop_customer_questions, args=(url,))
+        questions_thread = WebDriverThread(target=get_laptop_customer_questions, args=(url,1))
         questions_thread.start()
         customer_questions = questions_thread.join()
 

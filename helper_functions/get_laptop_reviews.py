@@ -6,7 +6,7 @@ from time import sleep
 from selenium.webdriver.common.by import By
 import constants.laptop_constants as constants
 
-def get_laptop_reviews(url):
+def get_laptop_reviews(url,max_page_size):
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install())) 
     driver.implicitly_wait(5)
     driver.get(url)
@@ -24,6 +24,12 @@ def get_laptop_reviews(url):
         current_page_number = 2
         # get reviews of the remaining pages
         while current_page_number <= page_count:
+            print(max_page_size)
+            print(current_page_number)
+            if max_page_size:
+                if current_page_number > max_page_size:
+                    break
+
             reviews_url = url + f"&page={current_page_number}"
             get_reviews_on_a_page(reviews_url ,driver, reviews)
             current_page_number  += 1
