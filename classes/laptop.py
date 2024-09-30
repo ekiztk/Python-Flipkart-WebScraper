@@ -5,7 +5,7 @@ import uuid
 class Laptop(Product):
     def __init__(self, id=None, name=None, url=None, processor_name=None, processor_brand=None, 
                  ram_capacity=None, storage_type=None, storage_capacity=None, screen_size=None, reviews=None):
-        self.id = str(uuid.uuid4())
+        self.id = str(id)
         self.name = name
         self.url = url
         self.processor_brand = processor_brand
@@ -34,17 +34,17 @@ class Laptop(Product):
     def review_to_md_text(self,review):
         md_text = ''
         if 'title' in review and review['title']:
-            md_text += f"### Comment Title: {review['title']}\n\n"
+            md_text += f"### Review's Title: {review['title']}\n\n"
         if 'rating' in review and review['rating']:
-            md_text += f"**Rating Given to the Laptop**: {review['rating']}\n\n"
+            md_text += f"**Review's Rating of the Laptop**: {review['rating']}\n\n"
         # if 'writtenBy' in review and review['writtenBy']:
         #     md_text += f"**Written By**: {review['writtenBy']}\n\n"
         if 'content' in review and review['content']:
-            md_text += f"**Comment Content**:\n{review['content']}\n\n"
+            md_text += f"**Review's Content**:\n{review['content']}\n\n"
         if 'numberOfLikes' in review and review['numberOfLikes']:
-            md_text += f"**Comment Likes**: {review['numberOfLikes']}\n"
+            md_text += f"**Review's Likes**: {review['numberOfLikes']}\n"
         if 'numberOfDislikes' in review and review['numberOfDislikes']:
-            md_text += f"**Comment Dislikes**: {review['numberOfDislikes']}\n"
+            md_text += f"**Review's Dislikes**: {review['numberOfDislikes']}\n"
 
         return textwrap.dedent(md_text)
 

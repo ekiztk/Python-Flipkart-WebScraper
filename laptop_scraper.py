@@ -2,20 +2,21 @@ import time
 from selenium import webdriver 
 from bs4 import BeautifulSoup
 import os
+from classes.LaptopDatabase import LaptopDatabase
 from classes.WebDriverThread import WebDriverThread
+from dotenv import load_dotenv
 
 from classes.laptop import Laptop
-from helper_functions.get_laptop_reviews import get_laptop_reviews, get_reviews_on_a_page
-from helper_functions.write_laptop_array_to_json import write_laptop_array_to_json
+from helper_functions.get_laptop_reviews import get_laptop_reviews
 import constants.laptop_constants as constants
 
 MAX_LAPTOP_COUNT = 3
 MAX_LAPTOP_REVIEW_PAGE_COUNT = 1 # 10 reviews per one page
 CURR_PAGE_NUMBER = 1 
-LAPTOP_MARKDOWNS_BASE_DIR = "data/laptop/markdowns"
 
 driver = webdriver.Chrome()
 driver.implicitly_wait(5)
+load_dotenv()
 
 all_laptop_urls = []
 
@@ -40,13 +41,6 @@ while len(all_laptop_urls) < MAX_LAPTOP_COUNT:
 # Getting Each Laptop Detail
 laptop_array : list[Laptop]  = []
 
-# Get the file ready
-file_to_save_laptop_details = "data/laptop/laptop_details.json"
-if os.path.exists(file_to_save_laptop_details):
-  os.remove(file_to_save_laptop_details)
-
-f = open(file_to_save_laptop_details, "x")
-
 def get_laptop_specifications(tbody, spec_keys):
     specs = {}
     rows = tbody.find_all('tr', class_='WJdYP6 row')
@@ -66,16 +60,17 @@ def save_laptop_as_markdown(base_directory, laptop: Laptop):
     os.makedirs(laptop_directory, exist_ok=True)
 
     # write features
-    features_filename = os.path.join(laptop_directory, f"{laptop.id}_features.md")
+    features_filename = os.path.join(laptop_directory, "features.md")
     with open(features_filename, 'w') as file:
         file.write(laptop.features_to_md_text())
 
     # write reviews
     for index, review in enumerate(laptop.reviews,start=1):
-        review_filename = os.path.join(laptop_directory, f"{laptop.id}_review_{index}.md")
+        review_filename = os.path.join(laptop_directory, f"review_{index}.md")
         with open(review_filename , 'w',encoding='utf-8') as file:
             file.write(laptop.review_to_md_text(review))
 
+laptop_db = LaptopDatabase(str(os.getenv('TUBITAK_DB_PATH')))
 # Laptops that will be being scrapped
 for url in all_laptop_urls:
     driver.get(url)
@@ -125,11 +120,10 @@ for url in all_laptop_urls:
                     storage_type=storage_type,storage_capacity=storage_capacity,
                     screen_size=screen_size,reviews=reviews)
     
-    save_laptop_as_markdown(LAPTOP_MARKDOWNS_BASE_DIR,laptop)
+    added_laptop_id = laptop_db.add_laptop(laptop.name, laptop.url)
+    laptop.id = str(added_laptop_id)
+
+    save_laptop_as_markdown(str(os.getenv('LAPTOP_MARKDOWNS_PATH')), laptop)
     laptop_array.append(laptop)
 
 driver.quit()
-
-# print("Started Writing Laptops To File")
-# write_laptop_array_to_json(laptop_array, file_to_save_laptop_details)
-# print("Finished Writing Laptops To File")
