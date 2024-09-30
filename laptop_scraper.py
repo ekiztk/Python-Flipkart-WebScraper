@@ -121,8 +121,11 @@ for url in all_laptop_urls:
                     screen_size=screen_size,reviews=reviews)
     
     added_laptop_id = laptop_db.add_laptop(laptop.name, laptop.url)
-    laptop.id = str(added_laptop_id)
 
+    if not added_laptop_id:
+        continue 
+
+    laptop.id = str(added_laptop_id)
     save_laptop_as_markdown(str(os.getenv('LAPTOP_MARKDOWNS_PATH')), laptop)
     laptop_array.append(laptop)
 

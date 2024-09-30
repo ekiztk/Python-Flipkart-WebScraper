@@ -15,12 +15,15 @@ class LaptopDatabase:
                 CREATE TABLE IF NOT EXISTS laptops (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
                     name TEXT NOT NULL,
-                    url TEXT NOT NULL
+                    url TEXT NOT NULL UNIQUE
                 )
             ''')
             conn.commit()
 
     def add_laptop(self, name, url):
+        if self.is_url_in_database(url):
+            return None
+
         with self.create_connection() as conn:
             c = conn.cursor()
             c.execute('''
@@ -35,3 +38,12 @@ class LaptopDatabase:
             c = conn.cursor()
             c.execute('SELECT * FROM laptops')
             return c.fetchall()
+        
+    def is_url_in_database(self, url):
+        with self.create_connection() as conn:
+            c = conn.cursor()
+            c.execute('''
+                SELECT 1 FROM laptops WHERE url = ?
+            ''', (url,))
+            result = c.fetchone()
+            return result is not None
